@@ -5,7 +5,8 @@
   "homepage": "https://goitacademy.github.io/parcel-project-template",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /parcel-project-template/",
+    "deploy": "netlify deploy -p"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,8 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "netlify-cli": "^15.9.1"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
