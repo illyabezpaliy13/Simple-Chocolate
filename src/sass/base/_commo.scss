@@ -1,0 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat';
+}
+button {
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.container {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 375px) {
+    width: 375px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+*::selection {
+  background-color: #fd9222;
+}
+.orange {
+    color: #fd9222;
+}
