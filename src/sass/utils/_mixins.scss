@@ -6,3 +6,10 @@
   letter-spacing: -0.28px;
   text-align: $text-align;
 };
+@mixin subtitle($color: $text-color, $text-align: left) {
+  color: $text-color;
+  text-align: $text-align;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}

@@ -1,0 +1,29 @@
+.reviews {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+.reviews__title {
+    @extend %title;
+    margin-bottom: 91px;
+}
+.reviews__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+}
+.reviews__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-top: 56px;
+    padding-bottom: 26px;
+}
+.reviews__name {
+    // @include subtitle();
+    margin-bottom: 24px;
+}
+// .reviews__text {
+    // @include subtext();
+// }
+
