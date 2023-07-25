@@ -1,29 +1,83 @@
 .reviews {
-    padding-top: 128px;
-    padding-bottom: 128px;
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
 .reviews__title {
-    @extend %title;
-    margin-bottom: 91px;
+  @extend %title;
+  margin-bottom: 91px;
+  display: block;
+  text-align: center;
 }
 .reviews__list {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 31px;
+  display: flex;
+  // justify-content: space-between;
+  margin-bottom: 31px;
 }
 .reviews__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    padding-top: 56px;
-    padding-bottom: 26px;
+  margin-right: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-top: 56px;
+  padding-right: 24px;
+  padding-bottom: 26px;
+  padding-left: 24px;
+  border-radius: 15px;
+  border: 1px solid $controls-color;
+  width: 360px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.reviews__pic {
+  width: 80px;
+  position: absolute;
+  top: -42px;
+  right: 140px;
+  // left: auto;
 }
 .reviews__name {
-    // @include subtitle();
-    margin-bottom: 24px;
+  @include subtitle();
+  margin-bottom: 24px;
+  text-align: center;
 }
-// .reviews__text {
-    // @include subtext();
-// }
+.reviews__text {
+  @include subtext($color: $subtext-color);
+}
 
+.reviews__controls-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.reviews__control {
+  background-color: $controls-color;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-right: 13px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+.active__control {
+  background-color: $accent-color;
+  width: 28px;
+  border-radius: 100px;
+}
+.reviews__btn {
+  background-color: transparent;
+  width: 222px;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: 1px solid $accent-color;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  @include subtitle();
+}
