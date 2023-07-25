@@ -1,0 +1,15 @@
+@mixin subtext($color: $text-color, $text-align: center) {
+  color: $color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  text-align: $text-align;
+};
+@mixin subtitle($color: $text-color, $text-align: left) {
+  color: $text-color;
+  text-align: $text-align;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
