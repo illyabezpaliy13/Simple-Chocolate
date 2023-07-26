@@ -3,119 +3,187 @@
     <h2 class="reviews__title">
       <span class="orange">chocolate</span> is loved
     </h2>
-    <ul class="reviews__list">
-      <li class="reviews__item">
-        <picture>
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./imgs/reviews/reviews-1-pc-1x.png 1x,
-              ./imgs/reviews/reviews-1-pc-2x.png 2x
-            "
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./imgs/reviews/reviews-1-mob-1x.png 1x,
-              ./imgs/reviews/reviews-1-mob-2x.png 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./imgs/reviews/reviews-1-tab-1x.png 1x,
-              ./imgs/reviews/reviews-1-tab-2x.png 2x
-            "
-          />
-          <img
-            src="./imgs/reviews/reviews-1-tab-1x.png"
-            alt="Victoria`s Photo"
-            class="reviews__pic"
-          />
-        </picture>
-        <h3 class="reviews__name">Victoria Dobrzhanska</h3>
-        <p class="reviews__text">
-          I love this chocolate bar. Perfect combination of light crispy wafer,
-          covered in a thin layer chocolate.
-        </p>
-      </li>
-      <li class="reviews__item">
-        <picture>
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./imgs/reviews/reviews-2-pc-1x.png 1x,
-              ./imgs/reviews/reviews-2-pc-2x.png 2x
-            "
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./imgs/reviews/reviews-2-mob-1x.png 1x,
-              ./imgs/reviews/reviews-2-mob-2x.png 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./imgs/reviews/reviews-2-tab-1x.png 1x,
-              ./imgs/reviews/reviews-2-tab-2x.png 2x
-            "
-          />
-          <img
-            src="./imgs/reviews/reviews-2-tab-1x.png"
-            alt="Nazar`s Photo"
-            class="reviews__pic"
-          />
-        </picture>
-        <h3 class="reviews__name">Nazar Babenko</h3>
-        <p class="reviews__text">
-          This chocolate confection is a delight! A delight! The wafer is light
-          and crisp, the hazelnut cream is smooth, and the chocolate is good.
-        </p>
-      </li>
-      <li class="reviews__item">
-        <picture>
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./imgs/reviews/reviews-3-pc-1x.png 1x,
-              ./imgs/reviews/reviews-3-pc-2x.png 2x
-            "
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./imgs/reviews/reviews-3-mob-1x.png 1x,
-              ./imgs/reviews/reviews-3-mob-2x.png 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./imgs/reviews/reviews-3-mob-1x.png 1x,
-              ./imgs/reviews/reviews-3-mob-2x.png 2x
-            "
-          />
-          <img
-            src="./imgs/reviews/reviews-3-tab-1x.png"
-            alt="Olena`s Photo"
-            class="reviews__pic"
-          />
-        </picture>
-        <h3 class="reviews__name">Olena Kampusch</h3>
-        <p class="reviews__text">
-          Chocolate is a family favourite treat. Love the delicious smooth
-          chocolate and the creaminess inside. The wafer is soft but crunchy.
-        </p>
-      </li>
-    </ul>
-    <ul class="reviews__controls-list">
+    <div class="swiper-container reviews__slider">
+      <ul class="reviews__list swiper-wrapper">
+        <li class="reviews__item swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./imgs/reviews/reviews-1-pc-1x.png 1x,
+                ./imgs/reviews/reviews-1-pc-2x.png 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./imgs/reviews/reviews-1-mob-1x.png 1x,
+                ./imgs/reviews/reviews-1-mob-2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./imgs/reviews/reviews-1-tab-1x.png 1x,
+                ./imgs/reviews/reviews-1-tab-2x.png 2x
+              "
+            />
+            <img
+              src="./imgs/reviews/reviews-1-tab-1x.png"
+              alt="Victoria`s Photo"
+              class="reviews__pic"
+            />
+          </picture>
+          <h3 class="reviews__name">Victoria Dobrzhanska</h3>
+          <p class="reviews__text">
+            I love this chocolate bar. Perfect combination of light crispy
+            wafer, covered in a thin layer chocolate.
+          </p>
+        </li>
+        <li class="reviews__item swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./imgs/reviews/reviews-2-pc-1x.png 1x,
+                ./imgs/reviews/reviews-2-pc-2x.png 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./imgs/reviews/reviews-2-mob-1x.png 1x,
+                ./imgs/reviews/reviews-2-mob-2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./imgs/reviews/reviews-2-tab-1x.png 1x,
+                ./imgs/reviews/reviews-2-tab-2x.png 2x
+              "
+            />
+            <img
+              src="./imgs/reviews/reviews-2-tab-1x.png"
+              alt="Nazar`s Photo"
+              class="reviews__pic"
+            />
+          </picture>
+          <h3 class="reviews__name">Nazar Babenko</h3>
+          <p class="reviews__text">
+            This chocolate confection is a delight! A delight! The wafer is
+            light and crisp, the hazelnut cream is smooth, and the chocolate is
+            good.
+          </p>
+        </li>
+        <li class="reviews__item swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./imgs/reviews/reviews-3-pc-1x.png 1x,
+                ./imgs/reviews/reviews-3-pc-2x.png 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./imgs/reviews/reviews-3-mob-1x.png 1x,
+                ./imgs/reviews/reviews-3-mob-2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./imgs/reviews/reviews-3-mob-1x.png 1x,
+                ./imgs/reviews/reviews-3-mob-2x.png 2x
+              "
+            />
+            <img
+              src="./imgs/reviews/reviews-3-tab-1x.png"
+              alt="Olena`s Photo"
+              class="reviews__pic"
+            />
+          </picture>
+          <h3 class="reviews__name">Olena Kampusch</h3>
+          <p class="reviews__text">
+            Chocolate is a family favourite treat. Love the delicious smooth
+            chocolate and the creaminess inside. The wafer is soft but crunchy.
+          </p>
+        </li>
+        <li class="reviews__item swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 300px)"
+              srcset="
+                ./imgs/reviews/reviews-6-1x.png 1x,
+                ./imgs/reviews/reviews-6-2x.png 2x
+              "
+            />
+            <img
+              src="./imgs/reviews/reviews-6-1x.png"
+              alt="Natalia`s Photo"
+              class="reviews__pic"
+            />
+          </picture>
+          <h3 class="reviews__name">Natalia Sus</h3>
+          <p class="reviews__text">
+            The chocolate assortment was delicious. Both dark and milk chocolate
+            pieces were smooth and just right on the sweetness level.
+          </p>
+        </li>
+        <li class="reviews__item swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 300px)"
+              srcset="
+                ./imgs/reviews/reviews-4-1x.png 1x,
+                ./imgs/reviews/reviews-4-2x.png 2x
+              "
+            />
+            <img
+              src="./imgs/reviews/reviews-4-1x.png"
+              alt="Olena`s Photo"
+              class="reviews__pic"
+            />
+          </picture>
+          <h3 class="reviews__name">Danilo Nottingham</h3>
+          <p class="reviews__text">
+            This is delicious. It so rich and flavorful you don’t need to use as
+            many. I love topping an apple with almond butter and these chips for
+            a snack.
+          </p>
+        </li>
+        <li class="reviews__item swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 300px)"
+              srcset="
+                ./imgs/reviews/reviews-5-1x.png 1x,
+                ./imgs/reviews/reviews-5-2x.png 2x
+              "
+            />
+            <img
+              src="./imgs/reviews/reviews-5-1x.png"
+              alt="Olena`s Photo"
+              class="reviews__pic"
+            />
+          </picture>
+          <h3 class="reviews__name">Irina Tydnyuk</h3>
+          <p class="reviews__text">
+            This is simply the best chocolate around, and I'm just thrilled to
+            support a local company! Best local chocolate - world class :)
+          </p>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- <ul class="reviews__controls-list">
       <li class="reviews__control active__control"></li>
       <li class="reviews__control"></li>
       <li class="reviews__control"></li>
       <li class="reviews__control"></li>
-    </ul>
+    </ul> -->
     <button class="reviews__btn" type="button">Leave a review</button>
   </div>
 </section>

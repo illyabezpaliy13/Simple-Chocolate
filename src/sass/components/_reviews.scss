@@ -14,7 +14,7 @@
   margin-bottom: 31px;
 }
 .reviews__item {
-  margin-right: 28px;
+  // margin-right: 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,15 +26,21 @@
   border-radius: 15px;
   border: 1px solid $controls-color;
   width: 360px;
-  &:last-child {
-    margin-right: 0;
+  &:first-child {
+    padding-bottom: 42px;
   }
+  // &:last-child {
+  //   margin-right: 0;
+  // }
 }
 .reviews__pic {
   width: 80px;
   position: absolute;
   top: -42px;
-  right: 140px;
+  // right: 140px;
+  // top:50%;
+left:50%;
+transform:translate(-50%, 0%);
   // left: auto;
 }
 .reviews__name {
@@ -46,29 +52,29 @@
   @include subtext($color: $subtext-color);
 }
 
-.reviews__controls-list {
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-}
-.reviews__control {
-  background-color: $controls-color;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  margin-right: 13px;
-  &:last-child {
-    margin-right: 0;
-  }
-  &:hover {
-    background-color: $accent-color;
-  }
-}
-.active__control {
-  background-color: $accent-color;
-  width: 28px;
-  border-radius: 100px;
-}
+// .reviews__controls-list {
+//   margin-bottom: 50px;
+//   display: flex;
+//   justify-content: center;
+// }
+// .reviews__control {
+//   background-color: $controls-color;
+//   width: 13px;
+//   height: 13px;
+//   border-radius: 50%;
+//   margin-right: 13px;
+//   &:last-child {
+//     margin-right: 0;
+//   }
+//   &:hover {
+//     background-color: $accent-color;
+//   }
+// }
+// .active__control {
+//   background-color: $accent-color;
+//   width: 28px;
+//   border-radius: 100px;
+// }
 .reviews__btn {
   background-color: transparent;
   width: 222px;
@@ -80,4 +86,42 @@
   margin-right: auto;
   margin-left: auto;
   @include subtitle();
+  &:hover {
+    border: none;
+    color : $title-color;
+    background-color: $accent-color;
+    transition-timing-function: ease-in;
+    transition-delay: 65ms;
+  }
+}
+.reviews__slider {
+  position: relative;
+  padding-top: 42px;
+  // width: auto;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.swiper-pagination {
+  // bottom: -50%;
+  // top: 900px;
+  position: static;
+  margin-top: 31px;
+}
+.reviews__slider .swiper-pagination-bullet{
+  width: 13px;
+  height: 13px;
+  background-color: $controls-color;
+  opacity: 1;
+  &:hover {
+    background-color: $accent-color;
+    transition-property: background-color;
+    transition-duration: 350ms;
+    transition-delay: 40ms;
+    transition-timing-function: ease-in-out;
+  }
+}
+.reviews__slider .swiper-pagination-bullet-active {
+  background-color: $accent-color;
+  width: 28px;
+  border-radius: 100px;
 }
