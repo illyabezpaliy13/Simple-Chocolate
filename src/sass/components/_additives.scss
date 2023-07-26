@@ -1,0 +1,115 @@
+.additives {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.additives__title {
+  @extend %title;
+  max-width: 411px;
+  text-align: center;
+  margin-left: auto;
+  margin-bottom: 28px;
+  margin-right: auto;
+}
+.additives__discription {
+  @include subtext();
+  max-width: 486px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+.additives__list {
+  display: flex;
+}
+.additives__item {
+  margin-right: 19px;
+  padding: 28px 36px 28px 28px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid $accent-color;
+  &:first-child {
+    background-color: $accent-color;
+    color: $title-color;
+    border: none;
+  }
+  &:nth-child(3) {
+    background-color: $background-color;
+    color: $title-color;
+    border: none;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.additives__item:hover + .additives-hover {
+  transform: translateY(0);
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+.additives__card-title {
+  margin-top: 36px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+}
+.additives-hover {
+  background-color: $title-color;
+  top: 0;
+  left: 0;
+  // transform: translateY(100%);
+  position: absolute;
+  opacity: 0;
+  z-index: 10;
+  padding: 28px;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
+  border:none;
+  &:hover {
+    opacity: 1;
+  }
+}
+.additives-hover__title {
+  @include subtitle($color: $text-color, $text-align: left);
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.additives-hover__btn {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 35px;
+  background-color: $accent-color;
+  color: $title-color;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  margin-bottom: 14px;
+  &:nth-child(2n) {
+    background-color: transparent;
+    color: $text-color;
+    border: 1px solid $accent-color;
+  }
+}
+.additives-hover__text {
+  color: $text-color;
+  overflow: hidden;
+  // white-space: wrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+}
+.addivities-hover__container {
+  overflow: hidden;
+}
