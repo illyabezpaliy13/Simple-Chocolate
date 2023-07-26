@@ -39,8 +39,8 @@
   top: -42px;
   // right: 140px;
   // top:50%;
-left:50%;
-transform:translate(-50%, 0%);
+  left: 50%;
+  transform: translate(-50%, 0%);
   // left: auto;
 }
 .reviews__name {
@@ -88,7 +88,7 @@ transform:translate(-50%, 0%);
   @include subtitle();
   &:hover {
     border: none;
-    color : $title-color;
+    color: $title-color;
     background-color: $accent-color;
     transition-timing-function: ease-in;
     transition-delay: 65ms;
@@ -107,7 +107,7 @@ transform:translate(-50%, 0%);
   position: static;
   margin-top: 31px;
 }
-.reviews__slider .swiper-pagination-bullet{
+.reviews__slider .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
   background-color: $controls-color;
