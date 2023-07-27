@@ -1,0 +1,70 @@
+.sellers__title{
+    text-align: center;
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: -0.72px;
+text-transform: uppercase;
+margin-bottom: 50px;
+}
+
+.sellers__list{
+    display: flex;
+
+}
+
+.sellers__list-item{
+    margin-right: 16px;
+}
+
+.sellers__list-item:last-child{
+    margin-right: 0;
+}
+
+.sellers__item-img{
+    width: 368px;
+    height: 464px;
+}
+
+.sellers__bottom-blok{
+    display: flex;
+width: 1136px;
+height: 72px;
+justify-content: center;
+align-items: flex-start;
+gap: 567px;
+flex-shrink: 0;
+margin-top: 32px;
+}
+
+.sellers__text{
+    width: 407px;
+flex-shrink: 0;
+color: #111;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: -0.28px;
+
+}
+
+
+.sellers__button{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    display: flex;
+padding: 14px 40px;
+align-items: flex-start;
+gap: 14px;
+border-radius: 100px;
+background: #FD9222;
+border: none;
+}
