@@ -8,11 +8,13 @@ font-weight: 600;
 line-height: 28px; /* 116.667% */
 letter-spacing: -0.72px;
 text-transform: uppercase;
-};
+}
 
 .production__bloks{
     display: flex;
+    margin-bottom: 128px;
 }
+
 .production__blok1{
 position: relative;
 }
