@@ -35,6 +35,7 @@
   border: 1px solid $accent-color;
   background-color: $title-color;
   transition-delay: 50ms;
+  overflow: scroll;
   &:first-child {
     background-color: $accent-color;
     color: $title-color;

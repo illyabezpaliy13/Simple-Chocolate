@@ -32,7 +32,30 @@
       called Cacao. Cacao has been around for thousands of years and was first
       discovered by the Native American tribe called the Mayans.
     </h3>
-    <button class="sellers__button">Buy now</button>
+    <button class="sellers__button" data-open-buy>Buy now</button>
   </div>
   </div>
 </section>
+
+<!-- <script>
+  (() => {
+    const refs = {
+      openModalBtn: document.querySelector('[data-open-modal]'),
+      closeModalBtn: document.querySelector('[data-close-modal]'),
+      backdropp: document.querySelector('[data-backdrop]'),
+    };
+
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+
+    refs.backdropp.addEventListener('click', logBackdropClick);
+
+    function toggleModal() {
+      refs.backdropp.classList.toggle('is-hiddenn');
+    }
+
+    function logBackdropClick() {
+      console.log('Це клік в бекдроп');
+    }
+  })();
+</script> -->

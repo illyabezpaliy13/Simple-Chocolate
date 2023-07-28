@@ -1,0 +1,146 @@
+<div class="backdrop2 is-hidden" data-backdrop-buy>
+  <form class="modal active1">
+    <button data-close-buy class="product-modal__close">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        viewBox="0 0 28 28"
+        fill="none"
+      >
+        <path
+          d="M21 7L7 21"
+          stroke="#111111"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M7 7L21 21"
+          stroke="#111111"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <h2 class="product-modal__title">
+      <span class="product-modal__span">BUY </span>NOW
+    </h2>
+    <ul class="product-modal__list">
+      <li class="product-modal__item">
+        <picture>
+          <source
+            media="(min-width: 320px)"
+            srcset="./imgs/modal/modal-2-1x.png, ./imgs/modal/modal-2-2x.png"
+          />
+          <img src="./imgs/modal/modal-2-1x.png" alt="?" />
+        </picture>
+        <button class="product-item__button">100 g</button>
+      </li>
+      <li class="product-modal__item">
+        <picture>
+          <source
+            media="(min-width: 320px)"
+            srcset="./imgs/modal/modal-3-1x.png, ./imgs/modal/modal-3-2x.png"
+          />
+          <img src="./imgs/modal/modal-3-1x.png" alt="?" />
+        </picture>
+        <button class="product-item__button">200 g</button>
+      </li>
+      <li class="product-modal__item">
+        <picture>
+          <source
+            media="(min-width: 320px)"
+            srcset="./imgs/modal/modal-4-1x.png, ./imgs/modal/modal-4-2x.png"
+          />
+          <img src="./imgs/modal/modal-4-1x.png" alt="?" />
+        </picture>
+        <button class="product-item__button">300 g</button>
+      </li>
+    </ul>
+    <label class="person__information">
+      <p class="person-information__text">Personal information</p>
+      <input
+        type="text"
+        name="name"
+        required
+        placeholder="Name"
+        class="person-information__input"
+      />
+    </label>
+    <label class="person-information__second-label">
+      <input type="text" name="surname" required placeholder="Surname" class="person-information__second-input"/>
+    </label>
+    <label class="email">
+      <p class="email__text">Email</p>
+      <input
+        type="email"
+        name="user-email"
+        placeholder="Enter your email"
+        required
+        class="email__input"
+      />
+    </label>
+    <label class="phone">
+      <p class="phone__text">Phone number</p>
+      <input
+        type="tel"
+        name="phone-number"
+        required
+        placeholder="Phone number"
+        id="phone1"
+        class="phone__input"
+      />
+    </label>
+    <label class="card">
+      <p class="card__num">Card number</p>
+      <input type="cardnum" placeholder="Enter card" class="card__input" />
+    </label>
+    <label class="comment">
+      <p class="comment__text">Comment</p>
+      <textarea
+        name="comment"
+        placeholder="Enter text"
+        class="comment__input"
+      ></textarea>
+    </label>
+    <button type="submit" class="buy-submit__button">Submit</button>
+  </form>
+</div>
+
+<!-- <script>
+  (() => {
+    const refs = {
+      openModalBtn: document.querySelector('[data-open-modal]'),
+      closeModalBtn: document.querySelector('[data-close-modall]'),
+      backdropp: document.querySelector('[data-backdrop]'),
+    };
+
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+
+    refs.backdropp.addEventListener('click', logBackdropClick);
+
+    function toggleModal() {
+      refs.backdropp.classList.toggle('is-hiddenn');
+    }
+
+    function logBackdropClick() {
+      console.log('Це клік в бекдроп');
+    }
+  })();
+</script> -->
+
+<!-- <script>
+    var input = document.querySelector('#phone1');
+    window.intlTelInput(input, {
+      utilsScript:
+        'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js',
+      separateDialCode: true,
+      initialCountry: 'ua',
+      excludeCountries: ['ru'],
+      customPlaceholder: true,
+      onlyCountries: ['us', 'ad', 'at', 'by', 'be', 'ch', 'ua'],
+    });
+  </script> -->

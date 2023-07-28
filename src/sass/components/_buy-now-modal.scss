@@ -1,0 +1,227 @@
+.backdrop2 {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 609px;
+  height: 800px;
+  scroll-behavior: auto;
+  overflow: scroll;
+  border-radius: 15px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 31;
+  padding: 24px 48px 48px 48px;
+  // background-color: #00000080;
+  backdrop-filter: blur(5px);
+}
+
+.backdrop2.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.product-modal__title {
+  color: $text-color;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.product-modal__span {
+  color: $accent-color;
+}
+
+.product-modal__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.product-modal__item {
+  padding: 24px 20px 18px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background-color: $title-color;
+}
+
+.product-item__button {
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fafafa;
+  padding: 8px 27px;
+  color: $text-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+}
+
+.product-modal__close {
+  border: none;
+  background-color: transparent;
+  margin-left: 95%;
+}
+
+.person-information__text {
+  color: $text-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128.571%;
+  letter-spacing: -0.28px;
+  margin-bottom: 8px;
+}
+
+.person-information__input {
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 5.444915294647217px 5.444915294647217px 0px
+    rgba(0, 0, 0, 0.03);
+  padding: 22px 24px;
+  margin-right: 20px;
+}
+
+.person-information__second-input {
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 5.444915294647217px 5.444915294647217px 0px
+    rgba(0, 0, 0, 0.03);
+  padding: 22px 24px;
+}
+
+.email__text {
+  color: $text-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128.571%;
+  letter-spacing: -0.28px;
+  margin-top: 21px;
+  margin-bottom: 8px;
+}
+
+.email__input {
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  padding: 22px 24px;
+  width: 513px;
+}
+
+.email__text {
+  color: $text-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128.571%;
+  letter-spacing: -0.28px;
+}
+
+.email__input {
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  width: 513px;
+  padding: 22px 24px;
+}
+
+.phone__text {
+  color: $text-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128.571%;
+  letter-spacing: -0.28px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.phone__input {
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  width: 513px;
+  // padding: 17px 24px;
+  padding-left: 120px !important;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent;
+  position: relative;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  padding-left: 24px;
+}
+
+.iti--separate-dial-code .iti__selected-flag:after {
+  content: '';
+  position: absolute;
+  left: 110px;
+  width: 3px;
+  height: 32px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card__input {
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  padding: 22px 24px;
+  width: 513px;
+}
+
+.comment__text {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+  margin-bottom: 8px;
+  border-radius: 13px;
+  margin-top: 18px;
+}
+
+.comment__input {
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  width: 513px;
+  padding: 22px 24px 93px 24px;
+  border-radius: 13px;
+}
+
+.buy-submit__button {
+  padding: 14px 40px;
+  border-radius: 100px;
+  background: #fd9222;
+  border: none;
+  margin-top: 18px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card__num {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
