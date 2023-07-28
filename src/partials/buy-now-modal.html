@@ -1,5 +1,5 @@
 <div class="backdrop2 is-hidden" data-backdrop-buy>
-  <form class="modal active1">
+  <form class="modal active1" id="form">
     <button data-close-buy class="product-modal__close">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -59,47 +59,58 @@
         <button class="product-item__button">300 g</button>
       </li>
     </ul>
-    <label class="person__information">
+    <label class="person__information" for="FormName">
       <p class="person-information__text">Personal information</p>
       <input
+        id="FormName"
         type="text"
         name="name"
         required
         placeholder="Name"
-        class="person-information__input"
+        class="person-information__input _req"
       />
     </label>
-    <label class="person-information__second-label">
-      <input type="text" name="surname" required placeholder="Surname" class="person-information__second-input"/>
+    <label class="person-information__second-label" for="FormSurname">
+      <input
+        id="FormSurname"
+        type="text"
+        name="surname"
+        
+        placeholder="Surname"
+        class="person-information__second-input _req"
+      />
     </label>
-    <label class="email">
+    <label class="email" for="FormEmail">
       <p class="email__text">Email</p>
       <input
-        type="email"
-        name="user-email"
+        id="FormEmail"
+        type="text"
+        name="email"
         placeholder="Enter your email"
-        required
-        class="email__input"
+        
+        class="email__input _req _email"
       />
     </label>
-    <label class="phone">
+    <label class="phone" for="FormTel">
       <p class="phone__text">Phone number</p>
       <input
-        type="tel"
+        id="FormTel"
+        type="text"
         name="phone-number"
-        required
+        
         placeholder="Phone number"
         id="phone1"
-        class="phone__input"
+        class="phone__input _req"
       />
     </label>
-    <label class="card">
+    <label class="card" for="FormCard">
       <p class="card__num">Card number</p>
-      <input type="cardnum" placeholder="Enter card" class="card__input" />
+      <input type="text" for="FormCard" placeholder="Enter card" class="card__input _req" minlength="16"/>
     </label>
-    <label class="comment">
+    <label class="comment" for="FormComment">
       <p class="comment__text">Comment</p>
       <textarea
+        id="FormComment"      
         name="comment"
         placeholder="Enter text"
         class="comment__input"
