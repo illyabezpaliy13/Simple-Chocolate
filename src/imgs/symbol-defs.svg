@@ -46,6 +46,16 @@
 
 
 
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="Vector" viewBox="0 0 37 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.0476" d="M35.048 3.048c-1.459 1.029-3.075 1.817-4.785 2.331-0.918-1.055-2.137-1.803-3.494-2.143s-2.785-0.254-4.091 0.245c-1.306 0.499-2.428 1.387-3.214 2.544s-1.197 2.527-1.178 3.926v1.524c-2.678 0.069-5.331-0.524-7.724-1.729s-5.212-4.072-6.752-6.264c0 0-5.333 14.805 8.381 20.9-3.138 2.13-6.877 3.198-10.667 3.048 13.714 7.619 30.476 0 30.476-17.524-0.001-0.424-0.042-0.848-0.122-1.265 1.555-1.534 2.653-3.47 3.17-5.592z"></path>
+</symbol>
+</defs>
+</svg>
+
+
+
 
 <!-- <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>

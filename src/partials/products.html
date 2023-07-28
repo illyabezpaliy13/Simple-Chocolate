@@ -5,7 +5,7 @@
     </h2>
     <div class="swiper-container products__slider">
     <ul class="products__list swiper-wrapper">
-      <li class="products__list__item swiper-slide" data-open-modal>
+      <li class="products__list__item swiper-slide">
         <picture>
           <source
             media="(min-width: 1200px)"
@@ -34,7 +34,7 @@
         <p class="products__item__description">Dark chocolate</p>
         <button class="products__item__button">45 UAH</button>
       </li>
-      <li class="products__list__item swiper-slide" data-open-modal>
+      <li class="products__list__item swiper-slide">
         <picture>
           <source
             media="(min-width: 1200px)"
@@ -62,7 +62,7 @@
         <p class="products__item__description">Milk chocolate</p>
         <button class="products__item__button">50 UAH</button>
       </li>
-      <li class="products__list__item swiper-slide" data-open-modal>
+      <li class="products__list__item swiper-slide">
         <picture>
           <source
             media="(min-width: 1200px)"
@@ -90,7 +90,7 @@
         <p class="products__item__description">Dark chocolate</p>
         <button class="products__item__button">66 UAH</button>
       </li>
-      <li class="products__list__item swiper-slide" data-open-modal>
+      <li class="products__list__item swiper-slide">
         <picture>
           <source
             media="(min-width: 1200px)"
@@ -116,7 +116,7 @@
         <p class="products__item__description">Milk chocolate</p>
         <button class="products__item__button">54 UAH</button>
       </li>
-      <li class="products__list__item swiper-slide" data-open-modal>
+      <li class="products__list__item swiper-slide">
         <picture>
           <source media="(min-width: 320px)" srcset="./imgs/products/products-5-1x.png 1x, ./imgs/products/products-5-2x.png 2x"/>
           <img src="./imgs/products/products-5-1x.png" alt="chocolate5">
@@ -125,7 +125,7 @@
         <p class="products__item__description">Milk chocolate</p>
         <button class="products__item__button">45 UAH</button>
       </li>
-      <li class="products__list__item swiper-slide" data-open-modal>
+      <li class="products__list__item swiper-slide">
         <picture>
           <source media="(min-width: 320px)" srcset="./imgs/products/products-6-1x.png 1x, ./imgs/products/products-6-2x.png 2x"/>
           <img src="./imgs/products/products-6-1x.png" alt="chocolate6">
@@ -134,7 +134,7 @@
         <p class="products__item__description">Milk chocolate</p>
         <button class="products__item__button">50 UAH</button>
       </li>
-      <li class="products__list__item swiper-slide" data-open-modal>
+      <li class="products__list__item swiper-slide">
         <picture>
           <source media="(min-width: 320px)" srcset="./imgs/products/products-7-1x.png 1x, ./imgs/products/products-7-2x.png 2x"/>
           <img src="./imgs/products/products-7-1x.png" alt="chocolate7">
@@ -143,7 +143,7 @@
         <p class="products__item__description">Dark chocolate</p>
         <button class="products__item__button">66 UAH</button>
       </li>
-      <li class="products__list__item swiper-slide" data-open-modal>
+      <li class="products__list__item swiper-slide">
         <picture>
           <source media="(min-width: 320px)" srcset="./imgs/products/products-8-1x.png 1x, ./imgs/products/products-8-2x.png 2x"/>
           <img src="./imgs/products/products-8-1x.png" alt="chocolate8">
@@ -157,3 +157,28 @@
     </div>
   </div>
 </section>
+
+
+
+<!-- <script>
+  (() => {
+    const refs = {
+      openModalBtn: document.querySelector('[data-open-modal]'),
+      closeModalBtn: document.querySelector('[data-close-modal]'),
+      backdropp: document.querySelector('[data-backdrop]'),
+    };
+
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+
+    refs.backdropp.addEventListener('click', logBackdropClick);
+
+    function toggleModal() {
+      refs.backdropp.classList.toggle('is-hiddenn');
+    }
+
+    function logBackdropClick() {
+      console.log('Це клік в бекдроп');
+    }
+  })();
+</script> -->
