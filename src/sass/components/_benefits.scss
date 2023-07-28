@@ -1,0 +1,72 @@
+.benefits{
+background: #1E1823;
+// height: 344px;
+padding-top: 50px;
+padding-bottom: 100px;
+}
+
+.benefits__list{
+    display: flex;
+width: 1100px;
+height: 244px;
+justify-content: center;
+align-items: flex-start;
+gap: 70px;
+flex-shrink: 0;
+}
+
+.benefits__svg-circle{
+    display: flex;
+width: 62px;
+height: 62px;
+justify-content: center;
+align-items: center;
+gap: 7.303px;
+flex-shrink: 0;
+    border-radius: 365px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+
+.benefits__svg{
+    width: 32px;
+height: 32px;
+flex-shrink: 0;
+}
+
+.benefits__item-title{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+
+.benefits__item-text{
+    color: rgba(255, 255, 255, 0.70);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.28px;
+padding-bottom: 50px;
+}
+
+.benefits__line{
+    margin-top: 68px;
+    width: 1px;
+height: 174px;
+background: rgba(255, 255, 255, 0.50);
+}
+
+.benefits__list-item{
+    display: flex;
+    width: 308px;
+    height: 244px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
