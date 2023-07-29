@@ -14,10 +14,15 @@
     refs.backdrop2.classList.toggle('is-hidden');
   }
 
-  function logBackdropClick() {
-    console.log('Це клік в бекдроп');
-  }
+  // function logBackdropClick() {
+  //   console.log('Це клік в бекдроп');
+  // }
 })();
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('form');
