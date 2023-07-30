@@ -2,65 +2,93 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 62px 20px 63px 20px;
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.2) 0%,
       rgba(0, 0, 0, 0.2) 100%
     ),
-    url(../imgs/advertising/addvertising-pc-1x.jpg),
+    url(../imgs/advertising/advertising-mob-1x.jpg),
     lightgray 0px -481.157px / 100% 375.122% no-repeat;
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../imgs/advertising/addvertising-pc-2x.jpg);
+    background-image: url(../imgs/advertising/advertising-mob-1x.jpg);
   }
 
-  padding: 72px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // height: 370px;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../imgs/advertising/advertising-tab-1x.jpg),
+      lightgray 0px -481.157px / 100% 375.122% no-repeat;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../imgs/advertising/advertising-tab-1x.jpg);
+    }
+    padding: 72px 151px 72px 150px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../imgs/advertising/addvertising-pc-1x.jpg),
+      lightgray 0px -481.157px / 100% 375.122% no-repeat;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../imgs/advertising/addvertising-pc-2x.jpg);
+    }
+    padding: 72px 367px 72px 366px;
+  }
 }
 
 .advertising__title {
   @extend %title;
   color: $title-color;
-  max-width: 390px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+  max-width: 300px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 116.667%;
+    letter-spacing: -0.72px;
+    max-width: 390px;
+  }
 }
 
 .advertising__text {
   @include subtext;
   color: $title-color;
   margin-top: 24px;
-  max-width: 467px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 320px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 467px;
+  }
 }
-
-// .test {
-//   background-size: cover;
-//   background-position: center;
-//   background-image: linear-gradient(
-//       0deg,
-//       rgba(0, 0, 0, 0.2) 0%,
-//       rgba(0, 0, 0, 0.2) 100%
-//     ),
-//     url(../imgs/advertising/addvertising-pc-1x.jpg),
-//     lightgray 0px -481.157px / 100% 375.122% no-repeat;
-
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(../imgs/advertising/addvertising-pc-2x.jpg);
-//   }
-//   padding: 72px 367px 72px 366px;
-// }
 
 .advertising__btn {
   @extend %accent-btn;
@@ -68,4 +96,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 24px;
+  padding: 12px 28px;
+  font-size: 14px;
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 40px;
+    font-size: 18px;
+  }
 }
