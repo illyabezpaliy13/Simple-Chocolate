@@ -1,43 +1,99 @@
 .hero {
-  padding-top: 32px;
-  padding-bottom: 72px;
+  padding-top: 14px;
+  padding-bottom: 71px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 72px;
+  }
 }
 
 .hero-background__box {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* height: 600px; */
-  padding-left: 40px;
-  padding-bottom: 40px;
-  padding-right: 40px;
-  padding-top: 381px;
+  padding-left: 20px;
+  padding-bottom: 21px;
+  padding-right: 16px;
   border-radius: 25px;
+  padding-top: 385px;
   background-image: linear-gradient(
       180deg,
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     ),
-    url(../imgs/hero/hero-pc-1x.jpg);
+    url(../imgs/hero/hero-mob-1x.jpg);
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../imgs/hero/hero-pc-2x.jpg);
+    background-image: url(../imgs/hero/hero-mob-2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../imgs/hero/hero-tab-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../imgs/hero/hero-tab-2x.jpg);
+    }
+    padding-top: 671px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 381px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../imgs/hero/hero-pc-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../imgs/hero/hero-pc-2x.jpg);
+    }
   }
 }
 
 .hero__title {
   color: $title-color;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 121.429%;
-  letter-spacing: -0.84px;
-  max-width: 461px;
   text-align: left;
   flex-shrink: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 121.429%;
+    letter-spacing: -0.84px;
+    max-width: 461px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 461px;
+  }
 }
 
 .hero-button__box {
@@ -47,44 +103,81 @@
 .buy__button {
   @extend %accent-btn;
   font-size: 14px;
+  padding: 12px 28px;
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 40px;
+  }
 }
 
 .made__button {
-  padding: 14px 40px;
   border-radius: 100px;
   border: 1px solid $title-color;
   background-color: transparent;
   color: $title-color;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
   margin-left: 14px;
+  padding: 12px 28px;
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 40px;
+  }
 }
 
 .hero-scroll__box {
-  margin-left: 87%;
+  margin-right: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 87%;
+    margin-top: 0;
+    margin-right: 0;
+  }
 }
 
 .scroll__text {
   color: $title-color;
-  font-size: 14px;
-  font-style: normal;
+  max-width: 100%;
+  flex-shrink: 0;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 128.571%;
-  letter-spacing: -0.42px;
+  line-height: 116.667%;
+  letter-spacing: -0.36px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 128.571%;
+    letter-spacing: -0.42px;
+  }
 }
 
 .scroll__button {
-  padding: 8px;
   border-radius: 50%;
+  margin-left: 14px;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 14px;
   fill: $accent-color;
+  padding: 6px;
+
+  @media screen and (min-width: 768px) {
+    padding: 8px;
+    margin-left: 14px;
+  }
+}
+
+.hero-scroll__svg {
+  width: 16px;
+  height: 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 22px;
+    height: 22px;
+  }
 }
