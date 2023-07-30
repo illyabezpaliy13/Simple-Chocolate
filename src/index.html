@@ -41,15 +41,56 @@
     <include src="./partials/advertising.html"></include>
     <include src="./partials/footer.html"></include>
     <include src="./partials/buy-now-modal.html"></include>
+    <include src="./partials/review-modal.html"></include>
 
     <!-- Scripts -->
 
     <script src="./js/buy-now.js" type="module"></script>
+    <script src="./js/review-modal.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="./js/swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
-    <script>
+    <script type="module">
       var input = document.querySelector('#phone1');
+      window.intlTelInput(input, {
+        utilsScript:
+          'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js',
+        separateDialCode: true,
+        initialCountry: 'ua',
+        excludeCountries: ['ru', 'by'],
+        customPlaceholder: true,
+        onlyCountries: [
+          'ua',
+          'at',
+          'bg',
+          'hu',
+          'de',
+          'gr',
+          'dk',
+          'ie',
+          'es',
+          'it',
+          'cy',
+          'lv',
+          'lt',
+          'lu',
+          'mt',
+          'nl',
+          'pl',
+          'pg',
+          'ro',
+          'sk',
+          'si',
+          'fi',
+          'hr',
+          'cz',
+          'se',
+          'ee',
+        ],
+      });
+    </script>
+     <script type="module">
+      var input = document.querySelector('#phone2');
       window.intlTelInput(input, {
         utilsScript:
           'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js',
