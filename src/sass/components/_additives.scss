@@ -35,7 +35,16 @@
   border: 1px solid $accent-color;
   background-color: $title-color;
   transition-delay: 50ms;
-  overflow: scroll;
+  // overflow: scroll;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
   &:first-child {
     background-color: $accent-color;
     color: $title-color;
@@ -141,10 +150,10 @@
   // transition: transform 350ms cubic-bezier(0.2, 0.85, 0.4, 1.275);
 }
 .additives__item:hover .additives-hover {
-transform: rotateY(0deg);
-z-index: 2;
+  transform: rotateY(0deg);
+  z-index: 2;
 }
 .additives__item:hover .addivities-front {
-transform: rotateY(180deg);
-z-index: -1;
+  transform: rotateY(180deg);
+  z-index: -1;
 }
