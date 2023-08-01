@@ -1,6 +1,5 @@
 .header {
   padding-top: 24px;
-  
 }
 
 .header__box {
@@ -87,6 +86,28 @@
   }
 }
 
+.header__item {
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    width: auto;
+    height: 2px;
+    display: block;
+    background-color: $accent-color;
+    overflow: hidden;
+    transform: translate(-100%, 0);
+    transition-duration: 500ms;
+    // flex-shrink: 0;
+  }
+
+  &:hover::after {
+    // width: auto;
+    overflow: hidden;
+    transform: translate(0, 0);
+  }
+}
+
 .header-item__link {
   color: $text-color;
   font-size: 14px;
@@ -94,6 +115,11 @@
   font-weight: 500;
   line-height: 114.286%;
   letter-spacing: -0.28px;
+  transition-duration: 400ms;
+
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 .header-icons__list {
@@ -219,5 +245,13 @@
   @media screen and (min-width: 768px) {
     bottom: 24px;
     left: 32px;
+  }
+}
+
+.header-svg__link {
+  &:hover {
+    fill: white;
+    color: aqua;
+    background-color: white;
   }
 }
