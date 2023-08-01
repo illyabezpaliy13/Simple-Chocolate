@@ -14,11 +14,12 @@
 }
 
 .hero-background__box {
+  position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-left: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 80px;
   padding-right: 16px;
   border-radius: 25px;
   padding-top: 385px;
@@ -96,8 +97,19 @@
   }
 }
 
-.hero-button__box {
+.hero-buttons__box {
+  display: flex;
   margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons__list {
+  display: flex;
+  gap: 14px;
+
+  @media screen and (max-width: 360px) {
+    display: block;
+  }
 }
 
 .buy__button {
@@ -118,8 +130,11 @@
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
-  margin-left: 14px;
   padding: 12px 28px;
+
+  @media screen and (max-width: 360px) {
+    margin-top: 10px;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 14px 40px;
@@ -127,6 +142,9 @@
 }
 
 .hero-scroll__box {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
   margin-right: 60%;
   display: flex;
   align-items: center;
@@ -137,6 +155,8 @@
     margin-left: 87%;
     margin-top: 0;
     margin-right: 0;
+    right: 40px;
+    bottom: 40px;
   }
 }
 
