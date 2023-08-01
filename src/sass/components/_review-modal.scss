@@ -88,6 +88,37 @@
     width: 437px;
   }
 }
+
+//?
+.comment__tel {
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  width: 437px;
+  // padding: 17px 24px;
+  padding-left: 125px !important;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent;
+  position: relative;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  padding-left: 24px;
+}
+
+.iti--separate-dial-code .iti__selected-flag:after {
+  content: '';
+  position: absolute;
+  left: 110px;
+  width: 3px;
+  height: 32px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+//?
 .comment__textarea {
   display: block;
   width: 100%;
@@ -123,10 +154,73 @@
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  position: relative;
   @media screen and (min-width: 768px) {
     padding: 14px 40px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 18px;
+  }
+}
+//?
+
+.comment__btn {
+  background-color:  transparent;
+  border: none;
+  // border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover {
+    .wave {
+      top: 0px;
+    }
+  }
+
+  span {
+    position: relative;
+    color: #000;
+  }
+
+  .wave {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 117px;
+    height: 50px;
+    background: linear-gradient(45deg, $accent-color, $accent-color);
+    transition: .5s ease;
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      top: 0px;
+      left: 50%;
+      transform: translate(-50%, -75%);
+    }
+
+    &:after {
+      border-radius: 40%;
+      background: rgba(#fafafa, .5);
+      animation: wave 7s linear infinite;
+    }
+
+    &:before {
+      border-radius: 45%;
+      background: rgba(#fafafa, 1);
+      animation: wave 12s linear infinite;
+    }
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  0% {
+    transform: translate(-50%, -75%) rotate(360deg);
   }
 }
