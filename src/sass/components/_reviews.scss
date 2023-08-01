@@ -53,6 +53,7 @@
   @media screen and (min-width: 768px) {
     padding-right: 16px;
     padding-left: 16px;
+    
   }
   @media screen and (min-width: 1200px) {
     padding-right: 24px;
@@ -79,9 +80,9 @@
 }
 .reviews__btn {
   background-color: transparent;
-  width: 222px;
-  padding: 14px 40px;
+  width: 165px;
   border-radius: 100px;
+  padding: 12px 28px;
   border: 1px solid $accent-color;
   display: flex;
   justify-content: center;
@@ -97,6 +98,8 @@
     transition-delay: 65ms;
   }
   @media screen and (min-width: 768px) {
+    width: 222px;
+    padding: 14px 40px;
     font-size: 18px;
   }
 }
