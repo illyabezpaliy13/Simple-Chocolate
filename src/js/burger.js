@@ -1,20 +1,15 @@
-// (() => {
-//     const refs = {
-//       openModalBtn: document.querySelector('[data-open-modal]'),
-//       closeModalBtn: document.querySelector('[data-close-modall]'),
-//       backdropp: document.querySelector('[data-backdrop]'),
-//     };
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-mobile-open]'),
+    closeModalBtn: document.querySelector('[data-mobile-close]'),
+    modal: document.querySelector('[data-mobile]'),
+  };
 
-//     refs.openModalBtn.addEventListener('click', toggleModal);
-//     refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
-//     refs.backdropp.addEventListener('click', logBackdropClick);
-
-//     function toggleModal() {
-//       refs.backdropp.classList.toggle('is-hiddenn');
-//     }
-
-//     function logBackdropClick() {
-//       console.log('Це клік в бекдроп');
-//     }
-//   })();
+  function toggleModal() {
+    document.body.classList.toggle('modal-open');
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
