@@ -113,12 +113,34 @@
 }
 
 .buy__button {
+  position: relative;
   @extend %accent-btn;
   font-size: 14px;
   padding: 12px 28px;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     padding: 14px 40px;
+  }
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  animation: button-circle 2s ease forwards;
+}
+
+@keyframes button-circle {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(20);
+    opacity: 0;
   }
 }
 
@@ -145,17 +167,27 @@
   position: absolute;
   left: 20px;
   bottom: 20px;
-  margin-right: 60%;
+  // margin-right: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 32px;
+  // margin-top: 32px;
 
   @media screen and (min-width: 768px) {
-    margin-left: 87%;
-    margin-top: 0;
-    margin-right: 0;
-    right: 40px;
+    // margin-left: 87%;
+    // margin-top: 0;
+    // margin-right: 0;
+    // right: 40px;
+    left: 535px;
+    bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // margin-left: 87%;
+    // margin-top: 0;
+    // margin-right: 0;
+    // right: 40px;
+    left: 970px;
     bottom: 40px;
   }
 }
