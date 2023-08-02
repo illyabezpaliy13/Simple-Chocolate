@@ -1,29 +1,65 @@
 .additives {
-  padding-top: 128px;
-  padding-bottom: 128px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
 }
 .additives__title {
-  @extend %title;
-  max-width: 411px;
+  color: $text-color;
+  font-weight: 600;
+  text-transform: uppercase;
   text-align: center;
   margin-left: auto;
-  margin-bottom: 28px;
   margin-right: auto;
+  max-width: 283px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    margin-bottom: 28px;
+    max-width: 411px;
+  }
 }
 .additives__discription {
   @include subtext();
-  max-width: 486px;
   margin-right: auto;
-  margin-bottom: 50px;
   margin-left: auto;
+  margin-bottom: 32px;
+  max-width: 335px;
+  @media screen and (min-width: 768px) {
+    max-width: 486px;
+    margin-bottom: 50px;
+  }
 }
 .additives__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
 }
 .additives__item {
-  margin-right: 19px;
-  padding: 28px 36px 28px 28px;
-  width: 270px;
+  width: 335px;
+  padding-top: 28px;
+  padding-right: 55px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,16 +70,18 @@
   overflow: hidden;
   border: 1px solid $accent-color;
   background-color: $title-color;
-  transition-delay: 50ms;
-  overflow: scroll;
-  overflow: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
+  // transition-delay: 50ms;
+  // overflow: scroll;
+  // overflow: auto;
+  // -ms-overflow-style: none;
+  // scrollbar-width: none;
+
+  // &::-webkit-scrollbar {
+  //   width: 0;
+  //   height: 0;
+  // }
 
   &:first-child {
     background-color: $accent-color;
@@ -51,6 +89,8 @@
     border: none;
     &:hover {
       border: 1px solid $accent-color;
+      transition-delay: 50ms;
+
       border-radius: 15px;
     }
   }
@@ -65,10 +105,36 @@
   }
   &:last-child {
     margin-right: 0;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    padding-top: 28px;
+    padding-right: 56px;
+    padding-bottom: 28px;
+    padding-left: 28px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    padding: 28px 36px 28px 28px;
+    margin-right: 19px;
+    gap: 0;
+  }
+}
+.additives__card-img {
+  padding-left: 28px;
+  @media screen and (min-width: 768px) {
+    display: block;
+    // text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline;
+    padding-left: 0;
   }
 }
 .additives__item:hover + .additives-hover {
-  transform: translateY(0);
+  // transform: translateY(0);
   top: 0;
   left: 0;
   opacity: 1;
@@ -92,15 +158,18 @@
   opacity: 1;
   // z-index: 0;
   padding: 28px;
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-delay: 50ms;
+  // transition-property: opacity;
+  // transition-duration: 250ms;
+  height: 100%;
+  transform: translateY(101%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transition-delay: 500ms;
   border: none;
-  transform: rotateY(-180deg);
-  // transition: transform .3s cubic-bezier(.2,.85,.4,1.275);
+  // transform: rotateY(-180deg);
+  transition: transform 0.3s cubic-bezier(0.2, 0.85, 0.4, 1.275);
   transition-property: transform;
   transition-duration: 300ms;
-  // transition-delay: 50ms;
+  transition-delay: 0ms;
   transition-timing-function: ease-in-out;
   // overflow: auto;
   // -ms-overflow-style: none;
@@ -121,8 +190,14 @@
   text-transform: uppercase;
   margin-bottom: 8px;
 }
+.addivities-hover-btns-block {
+  margin-bottom: 14px;
+  display: flex;
+  flex-wrap: nowrap;
+}
 .additives-hover__btn {
-  padding: 6px 16px;
+  padding-right: 16px;
+  padding-left: 16px;
   border: none;
   border-radius: 35px;
   background-color: $accent-color;
@@ -130,48 +205,105 @@
   font-size: 10px;
   font-weight: 400;
   line-height: 12px;
-  margin-bottom: 14px;
   cursor: default;
+  margin-right: 6px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: nowrap;
   &:hover {
     transform: scale(1);
   }
-  &:nth-child(2n) {
-    background-color: transparent;
+  &-benefit {
+    background-color: #fafafa;
     color: $text-color;
     border: 1px solid $accent-color;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 35px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-wrap: nowrap;
+    cursor: default;
+    height: 24px;
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+.additives-scroll-block {
+  display: block;
+  max-height: 146px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #fcf1e0;
+    border-radius: 100px;
+  }
+  &-last {
+    max-height: 146px;
+    display: block;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #fcf1e0;
+      border-radius: 100px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &-last {
+      max-height: 124px;
+    }
   }
 }
 .additives-hover__text {
   color: $text-color;
   overflow: hidden;
   // white-space: wrap;
-  text-overflow: ellipsis;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
-  text-overflow: ellipsis;
 }
 .addivities-hover__container {
-  overflow: hidden;
-  text-overflow: ellipsis;
+  // overflow: hidden;
 }
 .addivities-front {
   z-index: 2;
   position: relative;
-  backface-visibility: hidden;
+  // backface-visibility: hidden;
   overflow: hidden;
-  transition-property: transform;
-  transition-duration: 300ms;
-  // transition-delay: 50ms;
-  transition-timing-function: ease-in-out;
+  // transition-property: transform;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // transition-duration: 300ms;
+  transition-delay: 25ms;
+  // transition-timing-function: ease-in-out;
   // transition: transform 350ms cubic-bezier(0.2, 0.85, 0.4, 1.275);
 }
 .additives__item:hover .additives-hover {
-  transform: rotateY(0deg);
+  transform: translateY(0);
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 50ms;
+
   z-index: 2;
 }
 .additives__item:hover .addivities-front {
-  transform: rotateY(180deg);
+  // transition-delay: 50ms;
+
+  transform: translateY(-100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transition-property: transform;
+  // transition-duration: 300ms;
+  transition-delay: 50ms;
+  // transition-timing-function: ease-in-out;
   z-index: -1;
 }
