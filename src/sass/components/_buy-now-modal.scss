@@ -250,10 +250,21 @@
   line-height: 18px; /* 128.571% */
   letter-spacing: -0.28px;
 }
-._error {
-  box-shadow: 0 0 15px red;
-}
-.modal._sending::after {
-  opacity: 1;
-  visibility: visible;
-}
+// ._error {
+//   box-shadow: 0 0 15px red;
+// }
+// .modal._sending::after {
+//   opacity: 1;
+//   visibility: visible;
+// }
+
+// .test-checkbox {
+//   width: 100px;
+//   height: 100px;
+//   // overflow: hiden;
+//   // background-color: $accent-color;
+// }
+
+// .test-checkbox:checked ~ .product-modal__list > .product-modal__item {
+//   background-color: $accent-color;
+// }
