@@ -124,3 +124,72 @@
 .sellers-block-btn {
     position: relative;
 }
+figure {
+  // width: 450px;
+  // height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0 15px -5px #010101;
+  border-radius: 15px;
+  padding: 0;
+  margin: 0;
+  figcaption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // padding: 30px 40px;
+
+    ul {
+      position: absolute;
+      right: 15px;
+      bottom: 30px;
+      display: flex;
+
+      li {
+        margin: 0 15px;
+        transform: translatey(80px);
+
+        &:nth-child(1) { transition: .4s .05s; }
+
+        &:nth-child(2) { transition: .4s .1s; }
+
+        &:nth-child(3) { transition: .4s .15s; }
+      }
+
+      .icon {
+        color: #fff;
+        font-size: 30px;
+        transition: .5s ease;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 0;
+      background: rgba(0,0,0,.5);
+      clip-path: polygon( 0 100%, 100% 0, 100% 100%);
+      transition: .5s ease;
+    }
+
+    &:hover {
+      h2, li {
+        transform: translatey(0);
+      }
+
+      &:before {
+        height: 150px;
+      }
+    }
+  }
+}
