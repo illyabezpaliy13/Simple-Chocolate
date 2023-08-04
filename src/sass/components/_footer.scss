@@ -5,23 +5,35 @@
 .footer__title {
   width: 300px;
   color: #fff;
-  font-family: Montserrat;
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 34px;
-  letter-spacing: -0.56px;
+  letter-spacing: -0.48px;
+  line-height: 28px;
+  @media screen and (min-width: 768px) {
+    line-height: 34px;
+    letter-spacing: -0.56px;
+  }
 }
 
 .footer__blocks {
-  display: flex;
-  padding-top: 50px;
+  padding-top: 32px;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    display: flex;
+  }
 }
 
 .footer__contacts-block {
   width: 164px;
-  margin-left: 543px;
   display: flex;
+  margin-top: 32px;
+  @media screen and (min-width: 768px) {
+    margin-left: 124px;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+  margin-left: 543px;    
+  }
 }
 
 .footer-contacts__text {
@@ -52,21 +64,38 @@
 }
 
 .footer__line {
-  width: 1136px;
+  width: 335px;
   height: 2px;
   background: rgba(255, 255, 255, 0.1);
-  margin-top: 62px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    margin-top: 50px;
+  margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1200px){
+    width: 1136px;
+    margin-top: 62px;
+  }
 }
 
 .footer__list {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 24px;
-  padding-bottom: 50px;
+  margin-top: 32px;
+  width: 120px;
+  height: 152px;
+  padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
   margin-top: 24px;
+    width: 532px;
+    height: 16px;
+    display: flex;
+    padding-bottom: 50px;
+    align-items: flex-start;
+  }
 }
 
-.footer__link {
+.footer__link {  
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -74,14 +103,27 @@
   letter-spacing: -0.28px;
 }
 
+.footer__item {
+  margin-top: 18px;
+  @media screen and (min-width: 768px){
+    margin-left: 24px;
+  margin-top: 0;
+   }
+}
+
 .footer-contacts-socials {
   display: flex;
-  margin-left: 63px;
+  margin-left: 113px;
+  @media screen and (min-width: 768px){
+  margin-left: 50px;
+  }
+  @media screen and (min-width: 1200px){
+    margin-left: 63px;
+  }
 }
 
 .footer-socials__icon {
   width: 24px;
   height: 24px;
-  margin-right: 18px;
-  color: red;
+  margin-right: 14px;
 }
