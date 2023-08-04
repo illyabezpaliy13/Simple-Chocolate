@@ -70,7 +70,7 @@ new Swiper('.products__slider', {
       spaceBetween: 0,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 3.8,
       spaceBetween: 16,
     },
     1200: {
