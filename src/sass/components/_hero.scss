@@ -161,6 +161,11 @@
   @media screen and (min-width: 768px) {
     padding: 14px 40px;
   }
+
+  &:hover {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
 }
 
 .hero-scroll__box {
@@ -172,6 +177,7 @@
   align-items: center;
   justify-content: center;
   // margin-top: 32px;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     // margin-left: 87%;
@@ -200,6 +206,8 @@
   font-weight: 500;
   line-height: 116.667%;
   letter-spacing: -0.36px;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -222,6 +230,18 @@
     padding: 8px;
     margin-left: 14px;
   }
+}
+
+.hero-scroll__box:hover .scroll__text{
+  color: $accent-color;
+}
+
+.hero-scroll__box:hover .scroll__button {
+  background-color: $accent-color;
+}
+
+.hero-scroll__box:hover .hero-scroll__svg {
+  fill: $title-color;
 }
 
 .hero-scroll__svg {
