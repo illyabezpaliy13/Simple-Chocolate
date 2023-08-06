@@ -4,7 +4,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -39,6 +39,13 @@
   border-radius: 365px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   margin-bottom: 22px;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-delay: 50ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .benefits__svg {
