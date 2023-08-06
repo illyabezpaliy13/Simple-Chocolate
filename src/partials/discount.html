@@ -15,12 +15,27 @@
     <picture>
       <source
         media="(min-width: 1200px)"
-        srcset="./imgs/modal/modal-1-1x.png"
+        srcset="
+          ./imgs/modal/modal-1-pc-1x.png 1x,
+          ./imgs/modal/modal-1-pc-2x.png 2x
+        "
       />
-      <source media="(max-width: 767px)" srcset="./imgs/modal/modal-1-1x.png" />
-      <source media="(min-width: 768px)" srcset="./imgs/modal/modal-1-1x.png" />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./imgs/modal/modal-1-mob-1x.png 1x,
+          ./imgs/modal/modal-1-mob-2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./imgs/modal/modal-1-tab-1x.png 1x,
+          ./imgs/modal/modal-1-tab-2x.png 2x
+        "
+      />
       <img
-        src="./imgs/modal/modal-1-1x.png"
+        src="./imgs/modal/modal-1-tab-1x.png"
         alt="Chocolate Photo"
         class="discount__img"
       />
