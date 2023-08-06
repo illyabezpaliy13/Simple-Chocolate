@@ -15,8 +15,8 @@
   backdrop-filter: blur(5px);
   box-shadow: 0px 5.444915294647217px 5.444915294647217px 0px
     rgba(0, 0, 0, 0.03);
-   &::selection {
-    background-color: #1E1823;
+  &::selection {
+    background-color: #1e1823;
   }
   @media screen and (min-width: 768px) {
     width: 517px;
@@ -29,7 +29,7 @@
 .discount-container {
   position: relative;
   &::selection {
-    background-color: #1E1823;
+    background-color: #1e1823;
   }
 }
 .backdrop5 {
@@ -114,20 +114,22 @@
   line-height: 16px;
   letter-spacing: -0.28px;
   @media screen and (min-width: 768px) {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 24px;
-    letter-spacing: -0.48px;
+    letter-spacing: -0.36px;
   }
 }
 .discount__img {
-  transform: rotate(-17deg);
+  // transform: rotate(-17deg);
   position: absolute;
-  left: -124px;
-  bottom: -237.57px;
-  display: none;
+
+  // left: -124px;
+  // bottom: -237.57px;
+  // display: none;
   @media screen and (min-width: 768px) {
-    transform: rotate(-5deg);
-    left: -146px;
-    bottom: -240px;
+    // transform: rotate(-5deg);
+    top: 0;
+    left: -50px;
+    height: 516px;
   }
 }
