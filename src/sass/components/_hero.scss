@@ -119,6 +119,11 @@
   padding: 12px 28px;
   overflow: hidden;
 
+  &:hover {
+    background-color: #FCF1E0;
+    color: $accent-color;
+  }
+
   @media screen and (min-width: 768px) {
     padding: 14px 40px;
   }
@@ -127,7 +132,7 @@
 .ripple {
   position: absolute;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.5);
 
   animation: button-circle 2s ease forwards;
