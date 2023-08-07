@@ -103,7 +103,7 @@
   border-radius: 100px;
   background: $accent-color;
   border: none;
-//   position: absolute;
+  //   position: absolute;
   width: 120px;
   height: 41px;
   @media screen and (min-width: 768px) {
@@ -122,19 +122,27 @@
   }
 }
 .sellers-block-btn {
-    position: relative;
+  position: relative;
 }
-figure {
+.sellers__item-img {
+  transition-delay: 75ms;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+.sellers__figure {
   // width: 450px;
   // height: 300px;
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 0 15px -5px #010101;
+  // box-shadow: 0 0 15px -5px #010101;
   border-radius: 15px;
   padding: 0;
   margin: 0;
-  figcaption {
+  &:hover picture img {
+    transform: scale(1.07);
+  }
+  .sellers__submenu {
     position: absolute;
     top: 0;
     right: 0;
@@ -152,17 +160,23 @@ figure {
         margin: 0 15px;
         transform: translatey(80px);
 
-        &:nth-child(1) { transition: .4s .05s; }
+        &:nth-child(1) {
+          transition: 0.4s 0.05s;
+        }
 
-        &:nth-child(2) { transition: .4s .1s; }
+        &:nth-child(2) {
+          transition: 0.4s 0.1s;
+        }
 
-        &:nth-child(3) { transition: .4s .15s; }
+        &:nth-child(3) {
+          transition: 0.4s 0.15s;
+        }
       }
 
       .icon {
         color: #fff;
         font-size: 30px;
-        transition: .5s ease;
+        transition: 0.5s ease;
 
         &:hover {
           color: $accent-color;
@@ -177,13 +191,14 @@ figure {
       right: 0;
       bottom: 0;
       height: 0;
-      background: rgba(0,0,0,.5);
-      clip-path: polygon( 0 100%, 100% 0, 100% 100%);
-      transition: .5s ease;
+      background: rgba(0, 0, 0, 0.5);
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+      transition: 0.5s ease;
     }
 
     &:hover {
-      h2, li {
+      h2,
+      li {
         transform: translatey(0);
       }
 
@@ -192,4 +207,49 @@ figure {
       }
     }
   }
+}
+.img-zoom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 22;
+  display: none;
+}
+.img-zoom__pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  width: 368px;
+  height: 464px;
+}
+.img-zoom__close {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: $accent-color;
+  fill: $title-color;
+  color: $title-color;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 35px;
+  font-size: 33px;
+  cursor: pointer;
+}
+.share__btn {
+  background-color:transparent;
+  border: none;
+  outline: none;
+}
+#textToCopy {
+  display: none;
 }

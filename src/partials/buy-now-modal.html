@@ -28,39 +28,39 @@
       <span class="product-modal__span">BUY </span>NOW
     </h2>
     <div class="swiper-container buy-now__slider">
-    <ul class="product-modal__list swiper-wrapper">
-      <li class="product-modal__item swiper-slide">
-        <picture>
-          <source
-            media="(min-width: 320px)"
-            srcset="./imgs/modal/modal-2-1x.png, ./imgs/modal/modal-2-2x.png"
-          />
-          <img src="./imgs/modal/modal-2-1x.png" alt="?" />
-        </picture>
-        <button class="product-item__button" type="button">100 g</button>
-      </li>
-      <li class="product-modal__item swiper-slide">
-        <picture>
-          <source
-            media="(min-width: 320px)"
-            srcset="./imgs/modal/modal-3-1x.png, ./imgs/modal/modal-3-2x.png"
-          />
-          <img src="./imgs/modal/modal-3-1x.png" alt="?" />
-        </picture>
-        <button class="product-item__button" type="button">200 g</button>
-      </li>
-      <li class="product-modal__item swiper-slide">
-        <picture>
-          <source
-            media="(min-width: 320px)"
-            srcset="./imgs/modal/modal-4-1x.png, ./imgs/modal/modal-4-2x.png"
-          />
-          <img src="./imgs/modal/modal-4-1x.png" alt="?" />
-        </picture>
-        <button class="product-item__button" type="button">300 g</button>
-      </li>
-    </ul>
-    <div class="swiper__pagination buy-now-pagination"></div>
+      <ul class="product-modal__list swiper-wrapper">
+        <li class="product-modal__item swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 320px)"
+              srcset="./imgs/modal/modal-2-1x.png, ./imgs/modal/modal-2-2x.png"
+            />
+            <img src="./imgs/modal/modal-2-1x.png" alt="?" />
+          </picture>
+          <button class="product-item__button" type="button">100 g</button>
+        </li>
+        <li class="product-modal__item swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 320px)"
+              srcset="./imgs/modal/modal-3-1x.png, ./imgs/modal/modal-3-2x.png"
+            />
+            <img src="./imgs/modal/modal-3-1x.png" alt="?" />
+          </picture>
+          <button class="product-item__button" type="button">200 g</button>
+        </li>
+        <li class="product-modal__item swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 320px)"
+              srcset="./imgs/modal/modal-4-1x.png, ./imgs/modal/modal-4-2x.png"
+            />
+            <img src="./imgs/modal/modal-4-1x.png" alt="?" />
+          </picture>
+          <button class="product-item__button" type="button">300 g</button>
+        </li>
+      </ul>
+      <div class="swiper__pagination buy-now-pagination"></div>
     </div>
     <label class="person__information" for="FormName">
       <p class="person-information__text">Personal information</p>
@@ -70,6 +70,9 @@
         name="name"
         placeholder="Name"
         class="person-information__input _req"
+        data-aos="fade-right"
+        data-aos-duration="700"
+        data-aos-delay="750"
       />
     </label>
     <label class="person-information__second-label" for="FormSurname">
@@ -77,7 +80,6 @@
         id="FormSurname"
         type="text"
         name="surname"
-        
         placeholder="Surname"
         class="person-information__second-input _req"
       />
@@ -89,7 +91,6 @@
         type="text"
         name="email"
         placeholder="Enter your email"
-        
         class="email__input _req _email"
       />
     </label>
@@ -105,7 +106,13 @@
     </label>
     <label class="card" for="FormCard">
       <p class="card__num">Card number</p>
-      <input type="text" for="FormCard" placeholder="Enter card" class="card__input _req" minlength="16"/>
+      <input
+        type="text"
+        for="FormCard"
+        placeholder="Enter card"
+        class="card__input _req"
+        minlength="16"
+      />
       <svg class="buy-now-card__svg">
         <use href="./imgs/icons.svg#card"></use>
       </svg>
@@ -113,13 +120,19 @@
     <label class="comment" for="FormComment">
       <p class="comment__text">Comment</p>
       <textarea
-        id="FormComment"      
+        id="FormComment"
         name="comment"
         placeholder="Enter text"
         class="comment__input"
       ></textarea>
     </label>
-    <button type="submit" class="buy-submit__button" data-open-discount>Submit</button>
+    <button
+      type="submit"
+      class="buy-submit__button"
+      data-open-discount
+    >
+      Submit
+    </button>
   </form>
 </div>
 
