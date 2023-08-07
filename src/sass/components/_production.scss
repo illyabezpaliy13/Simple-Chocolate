@@ -1,17 +1,27 @@
 .production__title {
+  margin-bottom: 32px;
   text-align: center;
-  padding-bottom: 50px;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 28px;
-  letter-spacing: -0.72px;
-  text-transform: uppercase;
+  line-height: 24px; /* 120% */
+  letter-spacing: -0.6px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+  }
 }
 
 .production__bloks {
-  display: flex;
-  margin-bottom: 128px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-bottom: 128px;
+  }
 }
 
 .production__blok1 {
@@ -19,8 +29,8 @@
 }
 
 .production__img {
-  width: 600px;
-  height: 400px;
+  width: 335px;
+  height: 500px;
 }
 
 .production__playsvg {
@@ -31,14 +41,27 @@
 }
 
 .production__blok2 {
-  display: flex;
-  width: 452px;
-  height: 336px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 28px;
-  flex-shrink: 0;
-  margin-left: 52;
+  padding: 20px 14px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 92px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+    width: 614px;
+    height: 356px;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  @media screen and (min-width: 1200px) {
+width: 516px;
+height: 400px;
+padding: 32px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+  }
 }
 
 .production__list-title {
@@ -48,6 +71,12 @@
   font-weight: 600;
   margin-top: 32;
   line-height: 24px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  margin-top: 0;
+  }
 }
 
 .production__list-item {
@@ -56,9 +85,7 @@
 
 .production__item-text {
   color: #111;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
@@ -66,14 +93,14 @@
   margin-left: 8px;
 }
 
-// .production__item-svg {
-//   width: 8px;
-//   height: 8px;
-//   flex-shrink: 0;
-//   fill: #4c4c4c;
-//   stroke: #eceded;
-//   margin-top: 5px;
-// }
+.production__item-svg {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  fill: #4c4c4c;
+  stroke: #eceded;
+  margin-top: 5px;
+}
 
 // .vjs-big-play-button {
 //   // opacity: 0 !important;
@@ -102,12 +129,6 @@
 //   overflow: hidden;
 // }
 
-
-
-
-
-
-
 /*
   Player Skin Designer for Video.js
   http://videojs.com
@@ -123,7 +144,7 @@
 */
 
 // The following are SCSS variables to automate some of the values.
-// But don't feel limited by them. Change/replace whatever you want. 
+// But don't feel limited by them. Change/replace whatever you want.
 
 // The color of icons, text, and the big play button border.
 // Try changing to #0f0
@@ -132,7 +153,7 @@ $primary-foreground-color: #fff; // #fff default
 // The default color of control backgrounds is mostly black but with a little
 // bit of blue so it can still be seen on all-black video frames, which are common.
 // Try changing to #900
-$primary-background-color: transparent;  // #2B333F default
+$primary-background-color: transparent; // #2B333F default
 
 // Try changing to true
 $center-big-play-button: false; // true default
@@ -161,7 +182,7 @@ $center-big-play-button: false; // true default
      Now that font size is set, the following em values will be a multiple of the
      new font size. If the font-size is 3em (30px), then setting any of
      the following values to 3em would equal 30px. 3 * font-size. */
-  $big-play-width: 3em; 
+  $big-play-width: 3em;
   /* 1.5em = 45px default */
   $big-play-height: 1.5em;
 
@@ -179,7 +200,7 @@ $center-big-play-button: false; // true default
     left: 50%;
     top: 50%;
     margin-left: -($big-play-width / 2);
-    margin-top: -($big-play-height / 2);   
+    margin-top: -($big-play-height / 2);
   } @else {
     /* Align top left. 0.5em = 15px default */
     left: 0.5em;
@@ -187,10 +208,10 @@ $center-big-play-button: false; // true default
   }
 
   &:hover {
-    fill: #FD9222 !important;
-    color: #FD9222 !important;
-    background-color: #FD9222 !important;
-    border-color: #FD9222 !important;
+    fill: #fd9222 !important;
+    color: #fd9222 !important;
+    background-color: #fd9222 !important;
+    border-color: #fd9222 !important;
   }
 }
 
