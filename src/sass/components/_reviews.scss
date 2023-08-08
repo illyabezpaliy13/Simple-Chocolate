@@ -87,14 +87,13 @@
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in;
+  transition-delay: 55ms;
   @include subtitle();
   font-size: 14px;
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: ease-in;
-  transition-delay: 65ms;
   &:hover {
-    border: none;
+    // border: none;
     color: $title-color;
     background-color: $accent-color;
   }

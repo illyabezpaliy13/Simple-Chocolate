@@ -98,7 +98,11 @@
   margin-top: 24px;
   padding: 12px 28px;
   font-size: 14px;
-
+  &:hover {
+    background-color: #FCF1E0;
+    color : $accent-color;
+    transform: scale(1.05);
+  }
   @media screen and (min-width: 768px) {
     padding: 14px 40px;
     font-size: 18px;

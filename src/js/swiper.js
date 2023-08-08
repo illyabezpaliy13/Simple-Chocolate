@@ -10,10 +10,10 @@ new Swiper('.reviews__slider', {
     enabled: true,
     onlyinViewport: true,
   },
-  mousewheel: {
-    sensitivity: 2,
-    eventsTarget: '.reviews__slider',
-  },
+  // mousewheel: {
+  //   sensitivity: 2,
+  //   eventsTarget: '.reviews__slider',
+  // },
 
   //   loop: true,
   // loopedSlides: 3

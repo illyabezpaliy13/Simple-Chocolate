@@ -55,12 +55,12 @@
     flex-shrink: 0;
   }
   @media screen and (min-width: 1200px) {
-width: 516px;
-height: 400px;
-padding: 32px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
+    width: 516px;
+    height: 400px;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
   }
 }
 
@@ -75,7 +75,7 @@ flex-shrink: 0;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 28px;
-  margin-top: 0;
+    margin-top: 0;
   }
 }
 
@@ -163,7 +163,7 @@ $center-big-play-button: false; // true default
      All dimensions use em-based sizes so that the scale along with the font size.
      Try increasing it to 15px and see what happens. */
   font-size: 10px;
-
+  border-radius: 15px;
   /* The main font color changes the ICON COLORS as well as the text */
   color: $primary-foreground-color;
 }
@@ -208,10 +208,11 @@ $center-big-play-button: false; // true default
   }
 
   &:hover {
-    fill: #fd9222 !important;
-    color: #fd9222 !important;
-    background-color: #fd9222 !important;
-    border-color: #fd9222 !important;
+    // fill: #fd9222 !important;
+    // color: #fd9222 !important;
+    // background-color: #fd9222 !important;
+    // border-color: #fd9222 !important;
+    background-image: none;
   }
 }
 
@@ -259,4 +260,18 @@ $slider-bg-color: lighten($primary-background-color, 33%);
   background: lighten($slider-bg-color, 50%);
   /* Otherwise we'll rely on stacked opacities */
   background: #ffcf9c;
+}
+.vjs-theme-forest:hover {
+  
+  // border-color: #fd9222 !important;
+  // background: none;
+  
+}
+.vjs-theme-forest {
+    --vjs-theme-forest--primary: #FD9222;
+    --vjs-theme-forest--secondary: #fff;
+}
+.vjs-big-play-button {
+  display: none !important;
+  // background: url(../imgs/production/production-mob-1x.jpg);
 }
