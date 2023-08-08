@@ -11,14 +11,13 @@
       rgba(0, 0, 0, 0.2) 0%,
       rgba(0, 0, 0, 0.2) 100%
     ),
-    url(../imgs/advertising/advertising-mob-1x.jpg),
-    lightgray 0px -481.157px / 100% 375.122% no-repeat;
+    url(../imgs/advertising/advertising-mob-1x.jpg);
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../imgs/advertising/advertising-mob-1x.jpg);
+    background-image: url(../imgs/advertising/advertising-mob-2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
@@ -27,14 +26,13 @@
         rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url(../imgs/advertising/advertising-tab-1x.jpg),
-      lightgray 0px -481.157px / 100% 375.122% no-repeat;
+      url(../imgs/advertising/advertising-tab-1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../imgs/advertising/advertising-tab-1x.jpg);
+      background-image: url(../imgs/advertising/advertising-tab-2x.jpg);
     }
     padding: 72px 151px 72px 150px;
   }
@@ -45,8 +43,7 @@
         rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url(../imgs/advertising/addvertising-pc-1x.jpg),
-      lightgray 0px -481.157px / 100% 375.122% no-repeat;
+      url(../imgs/advertising/addvertising-pc-1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
