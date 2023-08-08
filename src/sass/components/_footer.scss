@@ -51,9 +51,13 @@
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
+  transition-property: color;
+  transition-duration: 350ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease-in-out;
   &:hover {
     color: $accent-color;
-    text-decoration: underline;
+    // text-decoration: underline;
   }
 }
 
@@ -65,9 +69,13 @@
   letter-spacing: -0.28px;
   margin-top: 4px;
   display: block;
+  transition-property: color;
+  transition-duration: 350ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease-in-out;
   &:hover {
     color: $accent-color;
-    text-decoration: underline;
+    // text-decoration: underline;
   }
 }
 
@@ -109,6 +117,10 @@
   font-weight: 500;
   line-height: 16px;
   letter-spacing: -0.28px;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease-in;
   &:hover {
     color: $accent-color;
   }
@@ -116,6 +128,24 @@
 
 .footer__item {
   margin-top: 18px;
+  overflow: hidden;
+  &::after {
+    content: '';
+    width: auto;
+    height: 1px;
+    display: block;
+    background-color: $accent-color;
+    overflow: hidden;
+    transform: translate(-100%, 0);
+    transition-duration: 500ms;
+    // flex-shrink: 0;
+  }
+
+  &:hover::after {
+    // width: auto;
+    overflow: hidden;
+    transform: translate(0, 0);
+  }
   @media screen and (min-width: 768px) {
     margin-left: 24px;
     margin-top: 0;
@@ -138,6 +168,10 @@
   height: 24px;
   margin-right: 14px;
   fill: $title-color;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease-in;
   &:hover {
     fill: $accent-color;
   }
