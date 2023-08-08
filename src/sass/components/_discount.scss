@@ -18,6 +18,9 @@
   &::selection {
     background-color: #1e1823;
   }
+  &::backdrop {
+    background-color: #1e1823;
+  }
   @media screen and (min-width: 768px) {
     width: 517px;
   }
@@ -122,14 +125,13 @@
 .discount__img {
   // transform: rotate(-17deg);
   position: absolute;
-
-  // left: -124px;
-  // bottom: -237.57px;
-  // display: none;
+  z-index: -1;
+  bottom: 0;
+  left: 0px;
+  // height: 162px;
+  width: 261px;
   @media screen and (min-width: 768px) {
-    // transform: rotate(-5deg);
-    top: 0;
-    left: -50px;
-    height: 516px;
+    width: 238px;
+    // height: 286px;
   }
 }
