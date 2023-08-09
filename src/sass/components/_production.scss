@@ -45,6 +45,8 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 92px;
+  background-color: #fff;
+  border-radius: 15px;
   @media screen and (min-width: 768px) {
     margin-bottom: 100px;
     width: 614px;
@@ -101,7 +103,15 @@
   stroke: #eceded;
   margin-top: 5px;
 }
-
+.production-video-block {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 // .vjs-big-play-button {
 //   // opacity: 0 !important;
 //   border: none;
@@ -166,6 +176,38 @@ $center-big-play-button: false; // true default
   border-radius: 15px;
   /* The main font color changes the ICON COLORS as well as the text */
   color: $primary-foreground-color;
+  max-width: 335px;
+  height: 500px;
+  // position: absolute;
+  // z-index: 55;
+  background-image: url(../imgs/production/production-mob-1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../imgs/production/production-mob-2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    height: 400px;
+    max-width: 614px;
+    background-image: url(../imgs/production/production-tab-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../imgs/production/production-tab-2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1290px) {
+    max-width: 700px;
+    background-image: url(../imgs/production/production-pc-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../imgs/production/production-pc-2x.jpg);
+    }
+  }
 }
 
 /* The "Big Play Button" is the play button that shows before the video plays.
@@ -233,8 +275,9 @@ $slider-bg-color: lighten($primary-background-color, 33%);
 
 /* Slider - used for Volume bar and Progress bar */
 .video-js .vjs-slider {
-  background-color: $slider-bg-color;
+  // background-color: $slider-bg-color;
   background-color: rgba($slider-bg-color, 0.5);
+  // background: rgba(253, 146, 34, 0.8);
 }
 
 /* The slider bar color is used for the progress bar and the volume bar
@@ -248,9 +291,10 @@ $slider-bg-color: lighten($primary-background-color, 33%);
 /* The main progress bar also has a bar that shows how much has been loaded. */
 .video-js .vjs-load-progress {
   /* For IE8 we'll lighten the color */
-  background: lighten($slider-bg-color, 25%);
+  // background: lighten($slider-bg-color, 25%);
   /* Otherwise we'll rely on stacked opacities */
-  background: rgba($slider-bg-color, 0.5);
+  // background: rgba($slider-bg-color, 0.5);
+  background: rgba(253, 146, 34, 0.8);
 }
 
 /* The load progress bar also has internal divs that represent
@@ -259,21 +303,26 @@ $slider-bg-color: lighten($primary-background-color, 33%);
   /* For IE8 we'll lighten the color */
   background: lighten($slider-bg-color, 50%);
   /* Otherwise we'll rely on stacked opacities */
-  background: #ffcf9c;
+  // background: #ffcf9c;
 }
 .vjs-theme-forest:hover {
-  
   // border-color: #fd9222 !important;
   // background: none;
-  
 }
 .vjs-theme-forest {
-    --vjs-theme-forest--primary: #FD9222;
-    --vjs-theme-forest--secondary: #fff;
+  --vjs-theme-forest--primary: #fd9222;
+  --vjs-theme-forest--secondary: #fff;
 }
 .vjs-big-play-button {
   display: none !important;
-  // background: url(../imgs/production/production-mob-1x.jpg);
+  // position: absolute;
+  // z-index: 10;
+  // background: url(../imgs/icons.svg#icon-play) !important;
+  // width: 44px;
+  // height: 44px;
+  // border: 101px solid red !important;
 }
 
-// .
+.vjs-poster {
+  display: none;
+}
