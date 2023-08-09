@@ -12,7 +12,7 @@
   z-index: 31;
   padding: 24px 48px 48px 48px;
   // background-color: $text-color00080;
-  backdrop-filter: blur(5px);
+  // backdrop-filter: blur(5px);
   width: 311px;
   height: 1007px;
   overflow: auto;
@@ -30,7 +30,7 @@
   }
 }
 
-.backdrop2.is-hidden {
+.is-hidden-buy {
   opacity: 0;
   pointer-events: none;
 }
@@ -414,6 +414,7 @@
     rgba(0, 0, 0, 0.03);
   width: 100%;
   padding: 14px 18px 60px 18px;
+  border-radius: 8px;
 
   @media screen and (min-width: 768px) {
     width: 513px;
@@ -512,4 +513,22 @@ color: $title-color;
   background-color: $accent-color;
   width: 28px;
   border-radius: 100px;
+}
+
+.error .input-field {
+  border-color: rgb(238, 117, 117);
+  // box-shadow: 0 0 15px red;
+}
+
+.error-label {
+  display: block;
+  color: rgb(238, 117, 117);
+  position: absolute;
+  font-size: 10px;
+  // margin-top: 3px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+    margin-top: 5px;
+  }
 }

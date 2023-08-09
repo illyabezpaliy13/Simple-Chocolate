@@ -1,5 +1,5 @@
-<div class="backdrop2 is-hidden" data-backdrop-buy>
-  <form class="modal active1" id="form_buy-now">
+<div class="backdrop2 is-hidden-buy" data-backdrop-buy>
+  <form class="modal active1" id="form_buy-now" action="">
     <button data-close-buy class="product-modal__close" type="button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -63,28 +63,32 @@
       <div class="swiper__pagination buy-now-pagination"></div>
     </div>
     <div class="person-information__block">
-    <label class="person__information" for="FormName">
-      <p class="person-information__text">Personal information</p>
-      <input
-        id="FormName"
-        type="text"
-        name="name"
-        placeholder="Name"
-        class="person-information__input _req"
-        data-aos="fade-right"
-        data-aos-duration="700"
-        data-aos-delay="750"
-      />
-    </label>
-    <label class="person-information__second-label" for="FormSurname">
-      <input
-        id="FormSurname"
-        type="text"
-        name="surname"
-        placeholder="Surname"
-        class="person-information__second-input _req"
-      />
-    </label>
+      <label class="person__information" for="FormName">
+        <p class="person-information__text">Personal information</p>
+        <input
+          id="FormName"
+          type="text"
+          name="name"
+          placeholder="Name"
+          class="person-information__input _req input-field"
+          data-aos="fade-right"
+          data-aos-duration="700"
+          data-aos-delay="750"
+          data-max-length="6"
+          data-min-length="2"
+        />
+      </label>
+      <label class="person-information__second-label" for="FormSurname">
+        <input
+          id="FormSurname"
+          type="text"
+          name="surname"
+          placeholder="Surname"
+          class="person-information__second-input _req input-field"
+          data-max-length="6"
+          data-min-length="2"
+        />
+      </label>
     </div>
     <label class="email" for="FormEmail">
       <p class="email__text">Email</p>
@@ -93,7 +97,8 @@
         type="text"
         name="email"
         placeholder="Enter your email"
-        class="email__input _req _email"
+        class="email__input _req _email input-field"
+        data-min-length="5"
       />
     </label>
     <label class="phone" for="FormTel">
@@ -103,7 +108,9 @@
         name="phonenum"
         placeholder="Phone number"
         id="phone1"
-        class="phone__input _req"
+        class="phone__input _req input-field"
+        data-max-length="11"
+        data-min-length="5"
       />
     </label>
     <label class="card" for="FormCard">
@@ -113,8 +120,9 @@
         for="FormCard"
         name="cardnum"
         placeholder="Enter card"
-        class="card__input _req"
-        minlength="16"
+        class="card__input _req input-field"
+        data-max-length="16"
+        data-min-length="16"
       />
       <svg class="buy-now-card__svg">
         <use href="./imgs/icons.svg#card"></use>
@@ -129,11 +137,7 @@
         class="buy-now__textarea"
       ></textarea>
     </label>
-    <button
-      type="submit"
-      class="buy-submit__button"
-      data-open-discount
-    >
+    <button type="submit" class="buy-submit__button" data-open-discount>
       Submit
     </button>
   </form>
