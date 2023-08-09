@@ -1,16 +1,16 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-open-discount]'),
-    closeModalBtn: document.querySelector('[data-close-discount]'),
-    backdrop4: document.querySelector('[data-backdrop-discount]'),
-  };
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector('[data-open-discount]'),
+//     closeModalBtn: document.querySelector('[data-close-discount]'),
+//     backdrop4: document.querySelector('[data-backdrop-discount]'),
+//   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+//   refs.openModalBtn.addEventListener('click', toggleModal);
+//   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  refs.backdrop4.addEventListener('click', logBackdropClick);
+//   refs.backdrop4.addEventListener('click', logBackdropClick);
 
-  function toggleModal() {
-    refs.backdrop4.classList.toggle('is-hidden');
-  }
-})();
+//   function toggleModal() {
+//     refs.backdrop4.classList.toggle('is-hidden');
+//   }
+// })();
