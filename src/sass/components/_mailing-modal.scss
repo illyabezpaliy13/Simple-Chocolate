@@ -1,0 +1,131 @@
+.backdrop__mailing {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  overflow: hidden;
+  width: 538px;
+  border-radius: 15px;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fafafa;
+  transform: translate(50%, -50%);
+  //   overflow: scroll;
+  //   z-index: 31;
+  //   padding: 24px 48px 48px 48px;
+  // background-color: $text-color00080;
+  // backdrop-filter: blur(5px);
+  //   height: 1007px;
+  //   overflow: hidden;
+  //   -ms-overflow-style: none;
+  //   scrollbar-width: none;
+}
+
+.is-hidden-mailing {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mailing__container {
+  position: relative;
+  //   padding-left: 40px;
+  //   padding-right: 40px;
+  padding-bottom: 40px;
+  //   padding-top: 236px;
+  //   background-image: url(../imgs/mailing-modal/mailing-modal-pc-1x.jpg);
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (-webkit-min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../imgs/mailing-modal/mailing-modal-pc-2x.jpg);
+  //   }
+}
+
+// .mailing__img {
+//   width: 538px;
+// }
+
+.mailing__title {
+  color: $text-color;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 116.667%;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-left: 40px;
+  //   max-width: 238px;
+}
+
+.mailing__span {
+  color: $accent-color;
+}
+
+// .mailing-form__box {
+//   display: flex;
+//   margin-top: 28px;
+// }
+
+.mailing__form {
+  display: flex;
+  margin-top: 28px;
+  margin-left: 40px;
+}
+
+.mailing-modal__input {
+  padding: 14px 24px;
+  border-radius: 30px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  width: 313px;
+  font-style: bold;
+  font-weight: 700;
+
+  &::placeholder {
+    color: rgba(64, 64, 64, 0.3);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      letter-spacing: -0.36px;
+    }
+  }
+}
+
+.mailing-modal__button {
+  padding: 17px 40px;
+  border-radius: 100px;
+  background-color: $accent-color;
+  color: $title-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+}
+
+.mailing-close__svg {
+  width: 12px;
+  height: 12px;
+
+  @media screen and (min-width: 768px) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.mailing-button__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  background-color: transparent;
+  fill: $title-color;
+}

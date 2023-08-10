@@ -1,0 +1,52 @@
+<div class="backdrop__mailing is-hidden-mailing" data-backdrop-mailing>
+  <div class="mailing__container">
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./imgs/mailing-modal/mailing-modal-pc-1x.jpg 1x,
+          ./imgs/mailing-modal/mailing-modal-pc-2x.jpg 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./imgs/mailing-modal/mailing-modal-mob-1x.jpg 1x,
+          ./imgs/mailing-modal/mailing-modal-mob-2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./imgs/mailing-modal/mailing-modal-tab-1x.jpg 1x,
+          ./imgs/mailing-modal/mailing-modal-tab-2x.jpg 2x
+        "
+      />
+      <img
+        src="./imgs/mailing-modal/mailing-modal-tab-1x.jpg"
+        alt="."
+        class="mailing__img"
+      />
+    </picture>
+    <button class="mailing-button__close" data-close-mailing>
+      <svg class="mailing-close__svg">
+        <use href="./imgs/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="mailing__title">
+      Explore our <br /><span class="mailing__span">new chocolate</span> first!
+    </h2>
+    <form class="mailing__form" action="">
+      <div class="mailing-form__box">
+        <input
+          type="text"
+          placeholder="Enter your email"
+          name="mailing-modal-email"
+          class="mailing-modal__input input-field"
+          data-min-length="5"
+        />
+        <button type="submit" class="mailing-modal__button">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
