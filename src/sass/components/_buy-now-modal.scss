@@ -440,17 +440,16 @@
 .buy-submit__button {
   padding: 12px 28px;
   border-radius: 100px;
-background: $accent-color;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-top: 18px;
-border: none;
-color: $title-color;
+  background: $accent-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 18px;
+  border: none;
+  color: $title-color;
 
-
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding: 14px 40px;
   }
 }
@@ -531,4 +530,31 @@ color: $title-color;
     font-size: 13px;
     margin-top: 5px;
   }
+}
+
+//? padding on li element bug
+
+.buy-select__btn {
+  background-color: transparent;
+  border: none;
+  &:hover {
+    transform: none;
+  }
+}
+
+.buy-selected__card {
+  border: 2.5px solid $accent-color;
+  transition-duration: 400ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease-in-out;
+  & span {
+    transition-duration: 350ms;
+    transition-delay: 50ms;
+    transition-timing-function: ease-in-out;
+    color: $title-color;
+    background-color: $accent-color;
+  }
+  // &:hover {
+  //   box-shadow: 0px 0px 15px 0px rgba(255, 145, 28, 1);
+  // }
 }
