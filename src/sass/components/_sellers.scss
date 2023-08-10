@@ -177,10 +177,12 @@
         color: #fff;
         font-size: 30px;
         transition: 0.5s ease;
-
         &:hover {
-          color: $accent-color;
+          color:#fedead;
         }
+        // &:first-child:hover {
+        //   color: #fafafa;
+        // }
       }
     }
 
@@ -246,10 +248,18 @@
   cursor: pointer;
 }
 .share__btn {
-  background-color:transparent;
+  background-color: transparent;
   border: none;
   outline: none;
 }
 #textToCopy {
   display: none;
+}
+.submenu-selected__icon {
+  // fill: $accent-color;
+  color: $accent-color !important;
+}
+.sellers-submenu-heart__btn {
+  background-color: transparent;
+  border: none;
 }
