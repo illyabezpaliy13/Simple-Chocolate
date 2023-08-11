@@ -7,15 +7,25 @@ selectBtns.forEach(btn => {
 
 //? Submenu Func
 
+
 const heartBtns = document.querySelectorAll('[data-heart-btn]');
+// const likesText = document.querySelectorAll('[data-likes-text]');
+// console.log(likesText.textContent.value);
 let likesCounter = Math.round(Math.random() * (1100 - 1) + 1);
 heartBtns.forEach(heartBtn => {
   heartBtn.addEventListener('click', () => {
-    if (heartBtn.firstElementChild.classList.contains('submenu-selected__icon')) {
+    if (
+      heartBtn.firstElementChild.classList.contains('submenu-selected__icon')
+    ) {
       likesCounter -= 1;
+      // likesText.textContent = likesCounter.value;
       console.log(likesCounter);
+      // console.log(likesText.textContent);
     } else {
       likesCounter += 1;
+      // likesText.textContent = likesCounter.value;
+
+      // likesText = likesCounter.textContent;
       console.log(likesCounter);
     }
     return heartBtn.firstElementChild.classList.toggle(

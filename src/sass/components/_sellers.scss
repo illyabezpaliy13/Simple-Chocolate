@@ -178,7 +178,7 @@
         font-size: 30px;
         transition: 0.5s ease;
         &:hover {
-          color:#fedead;
+          color: #fedead;
         }
         // &:first-child:hover {
         //   color: #fafafa;
@@ -262,4 +262,14 @@
 .sellers-submenu-heart__btn {
   background-color: transparent;
   border: none;
+}
+.sellers-submenu__hearts-counter {
+  color: $title-color;
+  position: absolute;
+  bottom: -50%;
+  left: 25%;
+  // transform: translate(-50% -50%);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
