@@ -30,7 +30,13 @@
   background: $title-color;
   padding: 32px 52px 32px 53px;
   // width: 335px;
-
+  transition-property: all;
+  transition-duration: 400ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    background-color: #FCF1E0;
+  }
   @media screen and (min-width: 768px){
     width: 270px !important;
     padding: 32px 20px;
@@ -104,4 +110,7 @@
   background-color: $accent-color;
   width: 28px;
   border-radius: 100px;
+}
+.products__img {
+  border-radius: 15px;
 }

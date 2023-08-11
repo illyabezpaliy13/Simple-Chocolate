@@ -180,6 +180,9 @@ $center-big-play-button: false; // true default
   height: 500px;
   background-color: $background-color;
   overflow: hidden;
+  transition-duration: 350ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease;
   // position: absolute;
   // z-index: 55;
   // background-image: url(../imgs/production/production-mob-1x.jpg);
@@ -189,7 +192,7 @@ $center-big-play-button: false; // true default
   //   (min-resolution: 2dppx) {
   //   background-image: url(../imgs/production/production-mob-2x.jpg);
   // }
-  & .vjs-big-play-button  {
+  & .vjs-big-play-button {
     // background-color: rgba($color: #fff, $alpha: 0.5) !important;
     // background-image: url(../imgs/icons.svg#icon-play) !important;
     // color: #fff;
@@ -199,8 +202,8 @@ $center-big-play-button: false; // true default
     // width: 50px;
     // height: 50px;
   }
-  &:hover .vjs-big-play-button  {
-    // opacity: 0;
+  &:hover .vjs-big-play-button {
+    opacity: 0 !important;
     // fill: $accent-color;
     background-image: none;
   }
@@ -236,7 +239,9 @@ $center-big-play-button: false; // true default
      All width/height values use ems, which are a multiple of the font size.
      If the .video-js font-size is 10px, then 3em equals 30px.*/
   font-size: 3em;
-
+  transition-duration: 350ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease;
   /* We're using SCSS vars here because the values are used in multiple places.
      Now that font size is set, the following em values will be a multiple of the
      new font size. If the font-size is 3em (30px), then setting any of
@@ -339,6 +344,9 @@ $slider-bg-color: lighten($primary-background-color, 33%);
   // width: 44px;
   // height: 44px;
   // border: 101px solid red !important;
+  transition-duration: 350ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease;
   &:hover {
     // opacity: 0;
   }
