@@ -97,24 +97,27 @@ new Swiper('.buy-now__slider', {
   // },
   freeMode: true,
   simulateTouch: false,
-  autoplay: {
-    delay: 2000,
-    stopOnLastSlide: false,
-    disableonInteraction: true,
-  },
-  speed: 750,
+  // initialSlide: 0,
+  // autoplay: {
+  //   delay: 2000,
+  //   stopOnLastSlide: false,
+  //   disableonInteraction: true,
+  // },
+  // speed: 750,
   // effect: 'coverflow'
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 1.1,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
     },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 18,
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 18,
-    },
+    // 768: {
+    //   slidesPerView: 3,
+    //   spaceBetween: 18,
+    // },
+    // 1200: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 18,
+    // },
   },
 });

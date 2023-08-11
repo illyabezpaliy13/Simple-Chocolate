@@ -1,19 +1,19 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-open-buy]'),
+    openModalBtn: document.querySelectorAll('[data-open-buy]'),
     closeModalBtn: document.querySelector('[data-close-buy]'),
     backdrop2: document.querySelector('[data-backdrop-buy]'),
     openModalBtnDiscount: document.querySelector('[data-open-discount]'),
     closeModalBtnDiscount: document.querySelector('[data-close-discount]'),
     backdrop4: document.querySelector('[data-backdrop-discount]'),
   };
-  refs.openModalBtn.addEventListener('click', toggleModal1);
+  // refs.openModalBtn.addEventListener('click', toggleModal1);
   refs.closeModalBtn.addEventListener('click', toggleModal1);
   // refs.backdrop2.addEventListener('click', logBackdropClick);
   function toggleModal1() {
     refs.backdrop2.classList.toggle('is-hidden-buy');
   }
-  // refs.openModalBtn.forEach(elem => elem.addEventListener('click', toggleModal1));
+  refs.openModalBtn.forEach(elem => elem.addEventListener('click', toggleModal1));
   // nnn
   // refs.openModalBtnDiscount.addEventListener('click', toggleModal2);
   // refs.closeModalBtnDiscount.addEventListener('click', toggleModal2);
