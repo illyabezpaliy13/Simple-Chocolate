@@ -50,16 +50,20 @@
   background-color: #0000003e;
   backdrop-filter: blur(5px);
 }
-.backdrop5.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+// .backdrop5.is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+// }
 .discount-container {
   padding: 84px 24px 170px 68px;
   position: relative;
   @media screen and (min-width: 768px) {
     padding: 154px 44px 154px 163px;
   }
+}
+.is-hidden-thanks {
+  opacity: 0;
+  pointer-events: none;
 }
 .discount__btn {
   background-color: $title-color;

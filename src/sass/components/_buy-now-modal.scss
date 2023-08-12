@@ -159,6 +159,15 @@
   border: none;
   background-color: transparent;
   margin-left: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  &:hover {
+    fill: $title-color;
+    background-color: $accent-color;
+    border-radius: 50%;
+  }
 }
 
 .person-information__text {
