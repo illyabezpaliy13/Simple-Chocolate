@@ -96,6 +96,7 @@ margin-left: 24px;
   display: flex;
   margin-top: 24px;
   margin-left: 24px;
+  // position: relative;
 
   @media screen and (min-width: 768px){
     margin-top: 28px;
@@ -103,6 +104,23 @@ margin-left: 24px;
   }
 
   @media screen and (min-width: 1200px){
+  }
+}
+
+.error-label-mailing {
+  display: block;
+  color: rgb(238, 117, 117);
+  position: absolute;
+  font-size: 10px;
+  left: 30px;
+  bottom: 15px;
+  // margin-top: 3px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+    margin-top: 5px;
+    left: 45px;
+    // bottom: 10px;
   }
 }
 
