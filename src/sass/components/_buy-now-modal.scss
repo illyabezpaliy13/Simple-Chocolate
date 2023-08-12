@@ -1,23 +1,37 @@
 .backdrop2 {
   position: fixed;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  scroll-behavior: auto;
-  overflow: scroll;
-  background-color: #fafafa;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #0000003e;
+  backdrop-filter: blur(5px);
   border-radius: 15px;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 31;
-  padding: 24px 48px 48px 48px;
   // background-color: $text-color00080;
   // backdrop-filter: blur(5px);
+}
+
+.buynow {
+  scroll-behavior: auto;
+  overflow: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  border-radius: 15px;
+  overflow: hidden;
   width: 311px;
   height: 1007px;
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  background-color: #fafafa;
+  padding: 24px 48px 48px 48px;
 
   &::-webkit-scrollbar {
     width: 0;
@@ -50,6 +64,10 @@
     visibility: hidden;
     transition: all 0.5s ease 0s;
   }
+}
+
+.modal-test {
+  position: relative;
 }
 
 .person-information__block {
@@ -398,18 +416,18 @@
   padding: 14px 18px;
   box-shadow: 0px 5.444915294647217px 5.444915294647217px 0px
     rgba(0, 0, 0, 0.03);
-    transition-duration: 300ms;
+  transition-duration: 300ms;
   transition-delay: 50ms;
   transition-timing-function: ease;
 
-    &:hover {
-      box-shadow: 0px 0px 15px 0px rgba(255, 145, 28, 1);
-    }
-    &:active,
-    &:focus {
-      border: 2px solid rgba(253, 146, 34, 0.5);
-      //  box-shadow: 0px 0px 10px 0px rgba(255, 145, 28, 1);
-    }
+  &:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255, 145, 28, 1);
+  }
+  &:active,
+  &:focus {
+    border: 2px solid rgba(253, 146, 34, 0.5);
+    //  box-shadow: 0px 0px 10px 0px rgba(255, 145, 28, 1);
+  }
 
   &::placeholder {
     font-size: 14px;
