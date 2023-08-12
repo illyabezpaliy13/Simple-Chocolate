@@ -3,24 +3,15 @@
     openModalBtn: document.querySelectorAll('[data-open-buy]'),
     closeModalBtn: document.querySelector('[data-close-buy]'),
     backdrop2: document.querySelector('[data-backdrop-buy]'),
-    openModalBtnDiscount: document.querySelector('[data-open-discount]'),
-    closeModalBtnDiscount: document.querySelector('[data-close-discount]'),
-    backdrop4: document.querySelector('[data-backdrop-discount]'),
   };
-  // refs.openModalBtn.addEventListener('click', toggleModal1);
   refs.closeModalBtn.addEventListener('click', toggleModal1);
-  // refs.backdrop2.addEventListener('click', logBackdropClick);
+
   function toggleModal1() {
     refs.backdrop2.classList.toggle('is-hidden-buy');
   }
-  refs.openModalBtn.forEach(elem => elem.addEventListener('click', toggleModal1));
-  // nnn
-  // refs.openModalBtnDiscount.addEventListener('click', toggleModal2);
-  // refs.closeModalBtnDiscount.addEventListener('click', toggleModal2);
-  // refs.backdrop4.addEventListener('click', logBackdropClick);
-  // function toggleModal2() {
-  //   refs.backdrop4.classList.toggle('is-hidden-discount');
-  // }
+  refs.openModalBtn.forEach(elem =>
+    elem.addEventListener('click', toggleModal1)
+  );
 })();
 
 function validation(form) {
@@ -80,16 +71,30 @@ function validation(form) {
   return result;
 }
 
+const refsDiscount = {
+  openModalBtn: document.querySelector('[data-open-discount]'),
+  closeModalBtn: document.querySelector('[data-close-discount]'),
+  backdrop4: document.querySelector('[data-backdrop-discount]'),
+  discountContainer: document.querySelector('.discount-container'),
+};
+
+function toggleModal() {
+  refsDiscount.backdrop4.classList.toggle('is-hidden-discount');
+}
+
 document
   .getElementById('form_buy-now')
   .addEventListener('submit', function (event) {
     event.preventDefault();
 
-    if (validation(this) == true) {
-      const TOKEN = '';
+    if (validation(this) === true) {
+      const TOKEN = '5843037828:AAF6MSZQ6jjMGCtboaDwbooVC-VkbCkz-gk';
       const CHAT_ID = '-1001917308774';
       const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
       const success = document.getElementById('success');
+
+      refsDiscount.openModalBtn.addEventListener('click', toggleModal);
+      refsDiscount.closeModalBtn.addEventListener('click', toggleModal);
 
       document
         .getElementById('form_buy-now')
@@ -119,40 +124,20 @@ document
               this.comment.value = '';
               success.style.display = 'block';
               success.innerHTML = 'Message Send';
-              // nnnn
-              const refsDiscount = {
-                openModalBtn: document.querySelector('[data-open-discount]'),
-                closeModalBtn: document.querySelector('[data-close-discount]'),
-                backdrop4: document.querySelector('[data-backdrop-discount]'),
-                discountContainer: document.querySelector(
-                  '.discount-container'
-                ),
-              };
-              // refsDiscount.openModalBtn.addEventListener('click', () => {
-              //   refsDiscount.discountContainer.style.display = 'flex';
-              // });
-              // refsDiscount.closeModalBtn.addEventListener('click', () => {
-              //   refsDiscount.discountContainer.style.display = 'none';
-              // });
-
-              refsDiscount.openModalBtn.addEventListener('click', toggleModal);
-              refsDiscount.closeModalBtn.addEventListener('click', toggleModal);
-              refsDiscount.backdrop4.addEventListener('click', logBackdropClick);
-
-              function toggleModal() {
-                refsDiscount.backdrop4.classList.toggle('is-hidden-discount');
-              }
             })
             .catch(err => {
               console.warn(err);
             })
             .finally(() => {
               console.log('The end');
+              refsDiscount.openModalBtn.removeEventListener(
+                'click',
+                toggleModal
+              );
+              document
+                .querySelector('[data-backdrop-buy]')
+                .classList.toggle('is-hidden-buy');
             });
         });
-
-      // alert('Форма проверена успешно!');
     }
   });
-
-// hhhhh
