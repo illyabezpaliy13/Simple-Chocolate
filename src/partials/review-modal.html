@@ -1,8 +1,11 @@
-<section class="is-hidden backdrop3" data-backdrop-review>
+<section class="is-hidden-review backdrop3" data-backdrop-review>
   <div class="modal__review">
     <div class="modal-review__container">
       <h2 class="modal-review__title">
-        LEAVE A REVIEW ABOUT <span class="orange">OUR CHOCOLATE</span>
+        LEAVE A REVIEW
+        <span class="review-modal__line-break"
+          >ABOUT <span class="orange">OUR CHOCOLATE</span></span
+        >
       </h2>
       <button class="modal-review__btn" type="button" data-close-review>
         <svg width="22" height="22">
@@ -32,13 +35,13 @@
           placeholder="Phone number"
           class="comment__tel comment__input input-field"
           name="commentphonenum"
-          data-max-length="10"
-          data-min-length="2"
+          data-min-length="3"
         />
         <textarea
-          class="comment__textarea"
+          class="comment__textarea input-field"
           placeholder="Enter text"
-          maxlength="750"
+          data-max-length="750"
+          data-min-length="10"
           name="commentreview"
         ></textarea>
         <button class="comment__btn" type="submit" data-open-thanks>
