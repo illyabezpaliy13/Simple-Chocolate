@@ -404,19 +404,41 @@
   position: relative;
   border-top-left-radius: 13px;
   border-bottom-left-radius: 13px;
-  padding-left: 24px;
+  padding-left: 18px;
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+  }
 }
 
 .iti--separate-dial-code .iti__selected-flag:after {
   content: '';
   position: absolute;
-  left: 110px;
+  left: 95px;
   width: 3px;
-  height: 32px;
+  height: 24px;
   display: block;
   background-color: rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: 768px) {
+    left: 110px;
+    height: 32px;
+  }
 }
-
+.iti__selected-dial-code {
+  font-size: 14px;
+  letter-spacing: -0.28px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    letter-spacing: -0.36px;
+  }
+}
+// .iti__selected-flag {
+//   width: 24px;
+//   height: 18px;
+//   @media screen and (min-width: 768px) {
+//     width: 32px;
+//     height: 24px;
+//   }
+// }
 .card__input {
   border-radius: 8px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
