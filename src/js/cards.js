@@ -7,7 +7,6 @@ selectBtns.forEach(btn => {
 
 //? Submenu Func
 
-
 const heartBtns = document.querySelectorAll('[data-heart-btn]');
 // const likesText = document.querySelectorAll('[data-likes-text]');
 // console.log(likesText.textContent.value);
@@ -31,5 +30,14 @@ heartBtns.forEach(heartBtn => {
     return heartBtn.firstElementChild.classList.toggle(
       'submenu-selected__icon'
     );
+  });
+});
+
+const burgerLinks = document.querySelectorAll('[data-burger-navElem]');
+// console.log(burgerLinks);
+burgerLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    burgerLinks.forEach(elem => elem.classList.remove('burger-active__page'));
+    link.classList.toggle('burger-active__page');
   });
 });
