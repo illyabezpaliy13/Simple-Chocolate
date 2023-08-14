@@ -20,11 +20,11 @@ $('.slick__slider').slick({
   dots: true,
   // prevArrow: '<button type="button" class="my-slick-prev">&xlarr;</button>',
   // nextArrow: '<button type="button" class="my-slick-next">&xrarr;</button>',
-  infinite: true,
+  infinite: false,
   speed: 300,
   slidesToScroll: 1,
   adaptiveHeight: true,
-  slidesToShow: 3,
+  slidesToShow: 1,
   variableWidth: true, // обовязково додається, щоб частина картки заходило за вьюпорт
 
   responsive: [
