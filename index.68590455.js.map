@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,QAAQC,SAASC,cAAc","sources":["src/js/video.js"],"sourcesContent":["videojs(document.querySelector('.video-js'));"],"names":["videojs","document","querySelector"],"version":3,"file":"index.68590455.js.map"}
