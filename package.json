@@ -5,7 +5,9 @@
   "homepage": "https://illyabezpaliy13.github.io/Simple-Chocolate/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Simple-Chocolate/"
+    "build": "parcel build src/*.html --public-url /Simple-Chocolate/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
