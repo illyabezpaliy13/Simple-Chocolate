@@ -93,7 +93,7 @@ document
     event.preventDefault();
 
     if (validation(this) === true) {
-      const TOKEN = '';
+      const TOKEN = '6590186759:AAEXDgJPNN-mXGJ5L18tzDES9dWLPunj-qo';
       const CHAT_ID = '-1001917308774';
       const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
       const success = document.getElementById('success');
