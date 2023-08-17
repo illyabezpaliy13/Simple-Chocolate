@@ -17,6 +17,20 @@
   position: fixed;
   top: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.burger-modal__menu {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 50%;
   height: 100%;
   background-color: $background-color;
@@ -30,16 +44,6 @@
   @media screen and (min-width: 768px) {
     width: 290px;
   }
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.burger-modal__menu {
-  position: relative;
-  z-index: 30;
 }
 
 .burger-modal__close {
@@ -82,7 +86,6 @@
 .burger-modal__link {
   color: $title-color;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 114.286%;
   letter-spacing: -0.28px;
