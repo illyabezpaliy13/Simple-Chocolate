@@ -3,7 +3,7 @@
 }
 
 .footer__title {
-  width: 300px;
+  max-width: 300px;
   color: $title-color;
   font-size: 24px;
   font-weight: 500;
@@ -79,7 +79,8 @@
 }
 
 .footer__line {
-  width: 335px;
+  // max-width: 335px;
+  width: 100%;
   height: 2px;
   background: rgba(255, 255, 255, 0.1);
   margin-top: 32px;
@@ -148,6 +149,10 @@
 
 .footer-contacts-socials {
   display: flex;
+  margin-left: 60px;
+  @media screen and (min-width: 345px) {
+    margin-left: 76px;
+  }
   @media screen and (min-width: 375px) {
     margin-left: 113px;
   }
