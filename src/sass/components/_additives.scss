@@ -54,11 +54,11 @@
   }
 }
 .additives__item {
-  width: 335px;
-  padding-top: 28px;
-  padding-right: 55px;
-  padding-bottom: 28px;
-  padding-left: 28px;
+  width: auto;
+  padding-top: 23px;
+  padding-right: 50px;
+  padding-bottom: 23px;
+  padding-left: 23px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -94,6 +94,13 @@
   &:last-child {
     margin-right: 0;
     margin-bottom: 0;
+  }
+  @media screen and (min-width: 375px) {
+    width: 335px;
+    padding-top: 28px;
+    padding-right: 55px;
+    padding-bottom: 28px;
+    padding-left: 28px;
   }
   @media screen and (min-width: 768px) {
     width: 336px;

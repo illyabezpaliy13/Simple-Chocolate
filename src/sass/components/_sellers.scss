@@ -74,7 +74,10 @@
   line-height: 18px;
   letter-spacing: -0.28px;
   margin-bottom: 32px;
-  max-width: 306px;
+  max-width: 290px;
+  @media screen and (min-width: 375px) {
+    max-width: 306px;
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -141,10 +144,16 @@
 
     ul {
       position: absolute;
-      right: 15px;
-      bottom: 30px;
+      right: -10px;
+      bottom: 20px;
       display: flex;
-
+      @media screen and (min-width: 375px) {
+        bottom: 25px;
+      }
+      @media screen and (min-width: 768px) {
+        right: 15px;
+        bottom: 30px;
+      }
       li {
         margin: 0 15px;
         transform: translatey(80px);
