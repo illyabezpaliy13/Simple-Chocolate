@@ -22,7 +22,6 @@
 .sellers__list-item {
   margin-right: auto;
   margin-left: auto;
-  //   display: none;
   &:nth-child(2) {
     display: none;
   }
@@ -52,14 +51,12 @@
   @media screen and (min-width: 1200px) {
     width: 368px;
   }
-  //   height: 464px;
 }
 
 .sellers__bottom-block {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  //   align-items: flex-start;
   margin-top: 20px;
   @media screen and (min-width: 768px) {
     margin-top: 32px;
@@ -70,8 +67,7 @@
 
 .sellers__text {
   flex-shrink: 0;
-  color: #111;
-  font-family: Montserrat;
+  color: $text-color;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -103,14 +99,11 @@
   border-radius: 100px;
   background: $accent-color;
   border: none;
-  //   position: absolute;
   width: 120px;
   height: 41px;
   @media screen and (min-width: 768px) {
-    // margin-left: 236px;
     position: static;
     display: flex;
-    //   padding: 14px 40px;
     align-items: center;
     width: 162px;
     height: 50px;
@@ -130,12 +123,9 @@
   transition-duration: 300ms;
 }
 .sellers__figure {
-  // width: 450px;
-  // height: 300px;
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  // box-shadow: 0 0 15px -5px #010101;
   border-radius: 15px;
   padding: 0;
   margin: 0;
@@ -148,7 +138,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    // padding: 30px 40px;
 
     ul {
       position: absolute;
@@ -174,15 +163,12 @@
       }
 
       .icon {
-        color: #fff;
+        color: $title-color;
         font-size: 30px;
         transition: 0.5s ease;
         &:hover {
           color: #fedead;
         }
-        // &:first-child:hover {
-        //   color: #fafafa;
-        // }
       }
     }
 
@@ -256,7 +242,6 @@
   display: none;
 }
 .submenu-selected__icon {
-  // fill: $accent-color;
   color: $accent-color !important;
 }
 .sellers-submenu-heart__btn {
@@ -268,7 +253,6 @@
   position: absolute;
   bottom: -50%;
   left: 25%;
-  // transform: translate(-50% -50%);
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }

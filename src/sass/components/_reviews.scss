@@ -63,11 +63,8 @@
   width: 80px;
   position: absolute;
   top: -42px;
-  // right: 140px;
-  // top:50%;
   left: 50%;
   transform: translate(-50%, 0%);
-  // left: auto;
 }
 .reviews__name {
   @include subtitle();
@@ -93,7 +90,6 @@
   @include subtitle();
   font-size: 14px;
   &:hover {
-    // border: none;
     color: $title-color;
     background-color: $accent-color;
   }
@@ -106,7 +102,6 @@
 .reviews__slider {
   position: relative;
   padding-top: 42px;
-  // width: auto;
   overflow: hidden;
   margin-bottom: 32px;
   @media screen and (min-width: 768px) {
@@ -114,8 +109,6 @@
   }
 }
 .swiper-pagination {
-  // bottom: -50%;
-  // top: 900px;
   position: static;
   margin-top: 20px;
   @media screen and (min-width: 768px) {

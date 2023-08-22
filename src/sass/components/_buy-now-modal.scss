@@ -6,12 +6,9 @@
   bottom: 0;
   background-color: #0000003e;
   backdrop-filter: blur(5px);
-  // border-radius: 15px;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 31;
-  // background-color: $text-color00080;
-  // backdrop-filter: blur(5px);
 }
 
 .buynow {
@@ -58,8 +55,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    // background: $accent-color url(../imgs/loading-gif.gif) center / 50px
-    //   no-repeat;
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s ease 0s;
@@ -78,7 +73,6 @@
     display: flex;
     align-items: center;
     margin-top: 0;
-    // justify-content: left;
   }
 }
 
@@ -97,9 +91,6 @@
     line-height: 28px;
     letter-spacing: -0.72px;
   }
-
-  @media screen and (min-width: 1200px) {
-  }
 }
 
 .product-modal__span {
@@ -111,21 +102,17 @@
   align-items: center;
   justify-content: center;
   margin-top: 32px;
-  // gap: 16px;
   margin-bottom: 40px !important;
-  // overflow: hidden;
 }
 
 .product-modal__item {
   padding: 32px 32px 28px 32px;
   padding-bottom: 10px;
-  // padding: 20px;
   width: 210px;
   height: 220px;
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background-color: $title-color;
-  // min-width: 0px;
   margin-right: 20px !important;
 
   @media screen and (min-width: 768px) {
@@ -134,22 +121,6 @@
     height: 190px;
     margin-right: 16px !important;
   }
-
-  @media screen and (min-width: 1200px) {
-    // width: 155px !important;
-    // margin-right: 16px !important;
-  }
-
-  // &:first-child {
-  //   margin-right: 10px !important;
-  //   @media screen and (min-width: 768px) {
-  //     margin-right: 0;
-  //   }
-
-  //   @media screen and (min-width: 1200px) {
-  //     margin-right: 0;
-  //   }
-  // }
 }
 
 .product-item__button {
@@ -227,7 +198,6 @@
   &:active,
   &:focus {
     border: 2px solid rgba(253, 146, 34, 0.5);
-    //  box-shadow: 0px 0px 10px 0px rgba(255, 145, 28, 1);
   }
 
   &::placeholder {
@@ -274,7 +244,6 @@
   &:active,
   &:focus {
     border: 2px solid rgba(253, 146, 34, 0.5);
-    //  box-shadow: 0px 0px 10px 0px rgba(255, 145, 28, 1);
   }
 
   &::placeholder {
@@ -338,7 +307,6 @@
   &:active,
   &:focus {
     border: 2px solid rgba(253, 146, 34, 0.5);
-    //  box-shadow: 0px 0px 10px 0px rgba(255, 145, 28, 1);
   }
 
   &::placeholder {
@@ -382,7 +350,6 @@
 .phone__input {
   border-radius: 8px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  // padding: 17px 24px;
   box-shadow: 0px 5.444915294647217px 5.444915294647217px 0px
     rgba(0, 0, 0, 0.03);
   width: 100%;
@@ -397,7 +364,6 @@
   &:active,
   &:focus {
     border: 2px solid rgba(253, 146, 34, 0.5);
-    //  box-shadow: 0px 0px 10px 0px rgba(255, 145, 28, 1);
   }
 
   &::placeholder {
@@ -455,14 +421,6 @@
     letter-spacing: -0.36px;
   }
 }
-// .iti__selected-flag {
-//   width: 24px;
-//   height: 18px;
-//   @media screen and (min-width: 768px) {
-//     width: 32px;
-//     height: 24px;
-//   }
-// }
 .card__input {
   border-radius: 8px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
@@ -481,7 +439,6 @@
   &:active,
   &:focus {
     border: 2px solid rgba(253, 146, 34, 0.5);
-    //  box-shadow: 0px 0px 10px 0px rgba(255, 145, 28, 1);
   }
 
   &::placeholder {
@@ -559,7 +516,6 @@
   &:active,
   &:focus {
     border: 2px solid rgba(253, 146, 34, 0.5);
-    //  box-shadow: 0px 0px 10px 0px rgba(255, 145, 28, 1);
   }
 
   &::placeholder {
@@ -582,20 +538,6 @@
     border-radius: 13px;
   }
 }
-
-// .email__input::placeholder {
-//   font-size: 14px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: normal;
-//   letter-spacing: -0.28px;
-//   color: rgba(64, 64, 64, 0.3);
-
-//   @media screen and (min-width: 768px) {
-//     font-size: 18px;
-//     letter-spacing: -0.36px;
-//   }
-// }
 
 .buy-submit__button {
   padding: 12px 28px;
@@ -641,16 +583,12 @@
 .buy-now__slider {
   position: relative;
   padding-top: 42px;
-  // width: auto;
   overflow: hidden;
   margin-bottom: 14px;
 }
 
 .buy-now__slider .buy-now-pagination {
-  // bottom: -50%;
-  // top: 900px;
   position: static;
-  // margin-top: 31px;
   text-align: center;
 }
 
@@ -676,7 +614,6 @@
 
 .error .input-field {
   border-color: rgb(238, 117, 117);
-  // box-shadow: 0 0 15px red;
 }
 
 .error-label {
@@ -684,7 +621,6 @@
   color: rgb(238, 117, 117);
   position: absolute;
   font-size: 10px;
-  // margin-top: 3px;
 
   @media screen and (min-width: 768px) {
     font-size: 13px;
@@ -714,49 +650,9 @@
     color: $title-color;
     background-color: $accent-color;
   }
-  // &:hover {
-  //   box-shadow: 0px 0px 15px 0px rgba(255, 145, 28, 1);
-  // }
 }
 
 //slick
-
-// .slick-track {
-//   // display: flex;
-// }
-
-// .slick__slider {
-//   display: block !important;
-//   overflow: hidden;
-// }
-// .slick-dots {
-//   display: block;
-//   // display: flex;
-//   // text-align: center;
-//   align-items: center;
-//   justify-content: center;
-//   // margin-left: 122px;
-//   // position: absolute;
-
-//   & button {
-//     font-size: 0;
-//     width: 13px;
-//     height: 13px;
-//     background-color: $controls-color;
-//     border: none;
-//     border-radius: 50%;
-//     margin-right: 13px;
-//     // &:last-child {
-//     // margin-right: 0;
-//     // }
-//   }
-// }
-// .slick-active button {
-//   width: 28px;
-//   border-radius: 100px;
-//   background-color: $accent-color;
-// }
-
 //?
 
 .slick__slider {
@@ -783,53 +679,22 @@
   margin-right: 13px;
 }
 
-// .slick-dots li button:before {
-//   content: '';
-//   display: block;
-//   width: 13px;
-//   height: 13px;
-//   background-color: rgba(17, 17, 17, 0.1);
-//   border-radius: 50%;
-
-//     transition-property: background, opacity;
-// 	transition-duration: 250ms;
-// 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-// }
-
-// .slick-dots li button:hover:before,
-// .slick-dots li button:focus:before {
-//   opacity: 0.5;
-//   background-color: var(--brand-clr);
-// }
-
-// .slick-dots li.slick-active button:before {
-//   opacity: 1;
-//   width: 28px;
-//   border-radius: 6px;
-//   background-color: var(--brand-clr);
-
-//   transform: translate(-7px, 0);
-// }
-
 /* arrov */
 
-  .slick-arrow {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+.slick-arrow {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-
-  
 .slick__slider > .slick-track {
   display: flex;
   justify-content: center;
@@ -844,10 +709,6 @@
     gap: 16px;
   }
 }
-
-// .slick-dots {
-//   bottom: -32px;
-// }
 
 @media screen and (min-width: 768px) {
   .slick-dots {
@@ -904,7 +765,6 @@
   .modal-buy-images {
     width: 120px;
     height: 107px;
-
     transition: transform 250ms linear;
   }
 }
@@ -933,13 +793,6 @@
   border: none;
   border-radius: 50%;
   font-size: 0;
-  // &:hover {
-  //   background-color: $accent-color;
-  //   transition-property: background-color;
-  //   transition-duration: 350ms;
-  //   transition-delay: 40ms;
-  //   transition-timing-function: ease-in-out;
-  // }
 }
 
 #slick-slide-control01 {
@@ -950,13 +803,6 @@
   border: none;
   border-radius: 50%;
   font-size: 0;
-  // &:hover {
-  //   background-color: $accent-color;
-  //   transition-property: background-color;
-  //   transition-duration: 350ms;
-  //   transition-delay: 40ms;
-  //   transition-timing-function: ease-in-out;
-  // }
 }
 
 #slick-slide-control02 {
@@ -967,24 +813,12 @@
   border: none;
   border-radius: 50%;
   font-size: 0;
-  // &:hover {
-  //   background-color: $accent-color;
-  //   transition-property: background-color;
-  //   transition-duration: 350ms;
-  //   transition-delay: 40ms;
-  //   transition-timing-function: ease-in-out;
-  // }
 }
 
 .slick-dots .slick-active button {
   width: 28px !important;
   border-radius: 100px !important;
-  // height: 13px;
   background-color: $accent-color !important;
-  // opacity: 1;
-  // border: none;
-  // border-radius: 50%;
-  // font-size: 0;
 }
 
 .slick-dots {
