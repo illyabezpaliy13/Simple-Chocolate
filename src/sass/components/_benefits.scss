@@ -1,6 +1,5 @@
 .benefits {
   background: $background-color;
-  // height: 344px;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -55,7 +54,7 @@
 }
 
 .benefits__item-title {
-  color: #fff;
+  color: $title-color;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
@@ -72,7 +71,6 @@
 }
 
 .benefits__line {
-  // margin-top: 68px;
   height: 174px;
   background: rgba(255, 255, 255, 0.5);
 }

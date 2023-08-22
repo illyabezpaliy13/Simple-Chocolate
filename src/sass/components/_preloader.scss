@@ -37,7 +37,7 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  border: 10px solid #fd9222;
+  border: 10px solid $accent-color;
   border-top-color: transparent;
   border-radius: 50%;
 }
@@ -59,7 +59,7 @@
   position: relative;
   transform: translateZ(0) scale(1);
   backface-visibility: hidden;
-  transform-origin: 0 0; /* see note above */
+  transform-origin: 0 0;
 }
 .ldio-kgnvmzhzgcr div {
   box-sizing: content-box;

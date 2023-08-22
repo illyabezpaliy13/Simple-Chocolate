@@ -197,40 +197,24 @@
 
 .made__button:hover {
   color: $accent-color;
-  // scale: 0.1;
   box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
 }
-
-// .made__button:active {
-//   scale: 1;
-// }
-
 
 .hero-scroll__box {
   position: absolute;
   left: 20px;
   bottom: 20px;
-  // margin-right: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin-top: 32px;
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
-    // margin-left: 87%;
-    // margin-top: 0;
-    // margin-right: 0;
-    // right: 40px;
     left: 535px;
     bottom: 40px;
   }
 
   @media screen and (min-width: 1200px) {
-    // margin-left: 87%;
-    // margin-top: 0;
-    // margin-right: 0;
-    // right: 40px;
     left: 970px;
     bottom: 40px;
   }

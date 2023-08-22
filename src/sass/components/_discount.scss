@@ -1,6 +1,5 @@
 .backdrop4 {
   overflow: hidden;
-  //   position: relative;
   position: fixed;
   top: 0;
   right: 0;
@@ -50,10 +49,6 @@
   background-color: #0000003e;
   backdrop-filter: blur(5px);
 }
-// .backdrop5.is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-// }
 .discount-container {
   padding: 84px 24px 170px 68px;
   position: relative;
@@ -102,7 +97,7 @@
   text-transform: uppercase;
   margin-bottom: 8px;
   &::selection {
-    background-color: #1e1823;
+    background-color: $background-color;
   }
   @media screen and (min-width: 768px) {
     font-size: 24px;
@@ -117,7 +112,7 @@
   line-height: 16px;
   letter-spacing: -0.28px;
   &::selection {
-    background-color: #1e1823;
+    background-color: $background-color;
   }
   @media screen and (min-width: 768px) {
     font-size: 18px;
@@ -126,15 +121,12 @@
   }
 }
 .discount__img {
-  // transform: rotate(-17deg);
   position: absolute;
   z-index: -1;
   bottom: 0;
   left: 0px;
-  // height: 162px;
   width: 261px;
   @media screen and (min-width: 768px) {
     width: 238px;
-    // height: 286px;
   }
 }

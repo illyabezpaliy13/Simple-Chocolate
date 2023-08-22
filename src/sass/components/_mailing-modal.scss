@@ -1,6 +1,5 @@
 .backdrop__mailing {
   overflow: hidden;
-  // width: 311px;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #0000003e;
@@ -10,15 +9,6 @@
   right: 0;
   left: 0;
   bottom: 0;
-  //   overflow: scroll;
-  //   z-index: 31;
-  //   padding: 24px 48px 48px 48px;
-  // background-color: $text-color00080;
-  // backdrop-filter: blur(5px);
-  //   height: 1007px;
-  //   overflow: hidden;
-  //   -ms-overflow-style: none;
-  //   scrollbar-width: none;
 }
 
 .is-hidden-mailing {
@@ -50,14 +40,7 @@
   @media screen and (min-width: 768px){
   padding-bottom: 40px;
   }
-
-  @media screen and (min-width: 1200px){
-  }
 }
-
-// .mailing__img {
-//   width: 538px;
-// }
 
 .mailing__title {
   color: $text-color;
@@ -77,33 +60,20 @@ margin-left: 24px;
     margin-top: 40px;
     margin-left: 40px;
   }
-
-  @media screen and (min-width: 1200px){
-  }
-  //   max-width: 238px;
 }
 
 .mailing__span {
   color: $accent-color;
 }
 
-// .mailing-form__box {
-//   display: flex;
-//   margin-top: 28px;
-// }
-
 .mailing__form {
   display: flex;
   margin-top: 24px;
   margin-left: 24px;
-  // position: relative;
 
   @media screen and (min-width: 768px){
     margin-top: 28px;
     margin-left: 40px;
-  }
-
-  @media screen and (min-width: 1200px){
   }
 }
 
@@ -114,13 +84,11 @@ margin-left: 24px;
   font-size: 10px;
   left: 30px;
   bottom: 15px;
-  // margin-top: 3px;
 
   @media screen and (min-width: 768px) {
     font-size: 13px;
     margin-top: 5px;
     left: 45px;
-    // bottom: 10px;
   }
 }
 
@@ -156,9 +124,6 @@ margin-left: 24px;
     font-style: bold;
     font-weight: 700;
   }
-
-  @media screen and (min-width: 1200px){
-  }
 }
 
 .mailing-modal__button {
@@ -174,15 +139,11 @@ margin-left: 24px;
   font-weight: 600;
   line-height: normal;
   border: none;
-  // position: relative;
 
   @media screen and (min-width: 768px){
     padding: 17px 40px;
     right: 40px;
     top: 320px;
-  }
-
-  @media screen and (min-width: 1200px){
   }
 }
 
@@ -218,8 +179,5 @@ margin-left: 24px;
   @media screen and (min-width: 768px){
     top: 24px;
     right: 24px;
-  }
-
-  @media screen and (min-width: 1200px){
   }
 }
