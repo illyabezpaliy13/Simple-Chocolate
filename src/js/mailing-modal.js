@@ -82,7 +82,6 @@ function validation(form) {
 //! bc5 - thanks
 //! bc3 - review-modal
 
-
 // function toggleModalThanks() {
 //   refsThanks.backdrop5.classList.toggle('is-hidden-thanks');
 // }
@@ -93,7 +92,7 @@ document
     event.preventDefault();
 
     if (validation(this) === true) {
-      const TOKEN = '6590186759:AAEXDgJPNN-mXGJ5L18tzDES9dWLPunj-qo';
+      const TOKEN = '';
       const CHAT_ID = '-1001917308774';
       const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
       const success = document.getElementById('success');
@@ -127,6 +126,7 @@ document
               // this.commentphonenum.value = '';
               // this.cardnum.value = '';
               // this.commentreview.value = '';
+
               success.style.display = 'block';
               success.innerHTML = 'Message Send';
             })
@@ -134,6 +134,9 @@ document
               console.warn(err);
             })
             .finally(() => {
+              document
+                .querySelector('[data-backdrop-mailing]')
+                .classList.toggle('is-hidden-mailing');
               console.log('The end');
               // refsThanks.openModalBtn.removeEventListener(
               //   'click',
@@ -147,23 +150,19 @@ document
     }
   });
 
+// (() => {
+// const refs = {
+//   openModalBtn: document.querySelector('[data-open-thanks]'),
+//   closeModalBtn: document.querySelector('[data-close-thanks]'),
+//   backdrop5: document.querySelector('[data-backdrop-thanks]'),
+// };
 
+// refs.openModalBtn.addEventListener('click', toggleModal);
+// refs.closeModalBtn.addEventListener('click', toggleModal);
 
+// refs.backdrop5.addEventListener('click', logBackdropClick);
 
-
-  // (() => {
-    // const refs = {
-    //   openModalBtn: document.querySelector('[data-open-thanks]'),
-    //   closeModalBtn: document.querySelector('[data-close-thanks]'),
-    //   backdrop5: document.querySelector('[data-backdrop-thanks]'),
-    // };
-
-    // refs.openModalBtn.addEventListener('click', toggleModal);
-    // refs.closeModalBtn.addEventListener('click', toggleModal);
-
-    // refs.backdrop5.addEventListener('click', logBackdropClick);
-
-    // function toggleModal() {
-    //   refs.backdrop5.classList.toggle('is-hidden-thanks');
-    // }
-  // })();
+// function toggleModal() {
+//   refs.backdrop5.classList.toggle('is-hidden-thanks');
+// }
+// })();
