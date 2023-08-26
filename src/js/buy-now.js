@@ -122,14 +122,14 @@ document
               this.phonenum.value = '';
               this.cardnum.value = '';
               this.comment.value = '';
-              success.style.display = 'block';
-              success.innerHTML = 'Message Send';
+              // success.style.display = 'block';
+              // success.innerHTML = 'Message Send';
             })
             .catch(err => {
               console.warn(err);
             })
             .finally(() => {
-              console.log('The end');
+              // console.log('The end');
               refsDiscount.openModalBtn.removeEventListener(
                 'click',
                 toggleModal
