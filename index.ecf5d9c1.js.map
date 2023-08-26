@@ -1,0 +1,1 @@
+{"mappings":"ACAA,QAAQ,SAAS,aAAA,CAAc,a,4D","sources":["<anon>","src/js/video.js"],"sourcesContent":["var $1669c40e67736a17$exports = {};\nvideojs(document.querySelector(\".video-js\"));\n\n\n//# sourceMappingURL=index.ecf5d9c1.js.map\n","videojs(document.querySelector('.video-js'));"],"names":["videojs","document","querySelector"],"version":3,"file":"index.ecf5d9c1.js.map"}
