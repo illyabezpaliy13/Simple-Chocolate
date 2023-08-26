@@ -18,14 +18,14 @@ heartBtns.forEach(heartBtn => {
     ) {
       likesCounter -= 1;
       // likesText.textContent = likesCounter.value;
-      console.log(likesCounter);
+      // console.log(likesCounter);
       // console.log(likesText.textContent);
     } else {
       likesCounter += 1;
       // likesText.textContent = likesCounter.value;
 
       // likesText = likesCounter.textContent;
-      console.log(likesCounter);
+      // console.log(likesCounter);
     }
     return heartBtn.firstElementChild.classList.toggle(
       'submenu-selected__icon'

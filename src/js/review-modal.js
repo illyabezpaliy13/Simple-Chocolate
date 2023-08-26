@@ -131,14 +131,14 @@ document
               this.commentphonenum.value = '';
               // this.cardnum.value = '';
               this.commentreview.value = '';
-              success.style.display = 'block';
-              success.innerHTML = 'Message Send';
+              // success.style.display = 'block';
+              // success.innerHTML = 'Message Send';
             })
             .catch(err => {
               console.warn(err);
             })
             .finally(() => {
-              console.log('The end');
+              // console.log('The end');
               refsThanks.openModalBtn.removeEventListener(
                 'click',
                 toggleModalThanks
