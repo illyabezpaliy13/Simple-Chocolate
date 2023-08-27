@@ -12,6 +12,7 @@
     transform: translateY(0px);
   }
 }
+
 .scroll-to-top-block {
   position: fixed;
   right: 30px;
@@ -19,6 +20,7 @@
   transition-duration: 250ms;
   transition-delay: 100ms;
   animation: scrollToTopAnimation 3s linear infinite;
+  z-index: 10;
 }
 
 .d-none {
