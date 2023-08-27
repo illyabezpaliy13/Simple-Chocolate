@@ -37,10 +37,9 @@
 
 .header-logo__span {
   color: $text-color;
-
+  font-style: italic;
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    font-style: italic;
     font-weight: 700;
     line-height: 128.571%;
     letter-spacing: -0.42px;
@@ -50,6 +49,19 @@
     font-size: 18px;
     line-height: 111.111%;
     letter-spacing: -0.54px;
+  }
+}
+
+.header-logo__title:hover + .header-logo__svg {
+  transform: rotate(185deg);
+}
+
+.header-logo__svg {
+  transition-duration: 250ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease-out;
+  &:hover {
+    transform: rotate(185deg);
   }
 }
 
@@ -119,7 +131,7 @@
   width: 28px;
   height: 28px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     width: 32px;
     height: 32px;
   }

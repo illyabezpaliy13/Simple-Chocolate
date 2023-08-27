@@ -39,6 +39,8 @@ button {
   }
 }
 *::selection {
+  transition-duration: 350ms;
+  transition-delay: 50ms;
   background-color: #fd9222;
 }
 .orange {
