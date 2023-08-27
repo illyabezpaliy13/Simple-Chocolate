@@ -227,9 +227,19 @@ $slider-bg-color: lighten($primary-background-color, 33%);
   transition-timing-function: ease;
 }
 .vjs-control-bar {
+  transition-duration: 350ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease;
   margin-bottom: 0px !important;
 }
-
+.vjs-icon-placeholder::before {
+  transition-duration: 300ms;
+  transition-delay: 50ms;
+  transition-timing-function: ease;
+  &:hover {
+    transform: scale(1);
+  }
+}
 .vjs-poster img {
   object-fit: cover;
 }

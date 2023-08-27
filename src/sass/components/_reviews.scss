@@ -47,9 +47,16 @@
   border-radius: 15px;
   border: 1px solid $controls-color;
   width: 360px;
+  height: 200px;
   &:first-child {
     padding-bottom: 42px;
   }
+  // &:nth-child(4) {
+  //   padding-bottom: 42px;
+  // }
+  // &:last-child {
+  //   padding-bottom: 42px;
+  // }
   @media screen and (min-width: 768px) {
     padding-right: 16px;
     padding-left: 16px;

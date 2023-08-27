@@ -30,6 +30,10 @@
 
   @media screen and (min-width: 768px) {
     width: 517px;
+    height: 95vh;
+  }
+  @media screen and (min-width: 1200px) {
+    height: auto;
   }
 }
 .modal-review__container {
