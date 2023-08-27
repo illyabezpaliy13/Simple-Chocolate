@@ -67,7 +67,7 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.28px;
-  padding-bottom: 50px;
+  max-width: 308px;
 }
 
 .benefits__line {
@@ -78,8 +78,6 @@
 .benefits__list-item {
   position: relative;
   display: flex;
-  width: 308px;
-  height: 244px;
   flex-direction: column;
   align-items: flex-start;
 
