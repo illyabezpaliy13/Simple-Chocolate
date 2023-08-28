@@ -1,11 +1,16 @@
+
 <div>
-<h1 text-align="center">Simply Chocolate 🍫</h1>
+
+<h1 align="center">Simply Chocolate 🍫</h1>
+
 </div>
+<div><img align="right" width="300" src="./src/imgs/airproj.png" alt="Our logotype"></div>
 <div>
 <h2>Short description 🍁</h2>
 <h4>Small online store that sells premium chocolate.
 
 This project took us 1 month. Mostly, because of bugs.
+
 </h4>
 </div>
 <div>
@@ -17,6 +22,6 @@ This project took us 1 month. Mostly, because of bugs.
 </div>
 <div>
 <h2>Authors 💳</h2>
-<h4>@0qsenxx (😏), @m1xture (😏), @illyabezpaliy13 (☠️)
+<h4> <a href="https://github.com/0qsenxx">@0qsenxx (😏)</a>, <a href="https://github.com/m1xture"> @m1xture (😏) </a>, <a href="https://github.com/illyabezpaliy13"> @illyabezpaliy13 (☠️) </a>
 </h4>
 </div>
