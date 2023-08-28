@@ -1,19 +1,9 @@
 <section class="products" id="products">
   <div class="container">
-    <h2
-      class="products__title"
-      data-aos="fade-up"
-      data-aos-duration="600"
-      data-aos-delay="50"
-    >
+    <h2 class="products__title">
       Our <span class="products__title__word">PRODUCTS</span>
     </h2>
-    <div
-      class="swiper-container products__slider"
-      data-aos="fade-up"
-      data-aos-duration="700"
-      data-aos-delay="75"
-    >
+    <div class="swiper-container products__slider">
       <ul class="products__list swiper-wrapper">
         <li class="products__list__item swiper-slide">
           <picture>
@@ -224,35 +214,7 @@
           <button class="products__item__button" data-open-buy>54 UAH</button>
         </li>
       </ul>
-      <div
-        class="swiper__pagination"
-        data-aos="fade-down"
-        data-aos-duration="600"
-        data-aos-delay="50"
-      ></div>
+      <div class="swiper__pagination"></div>
     </div>
   </div>
 </section>
-
-<!-- <script>
-  (() => {
-    const refs = {
-      openModalBtn: document.querySelector('[data-open-modal]'),
-      closeModalBtn: document.querySelector('[data-close-modal]'),
-      backdropp: document.querySelector('[data-backdrop]'),
-    };
-
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-
-    refs.backdropp.addEventListener('click', logBackdropClick);
-
-    function toggleModal() {
-      refs.backdropp.classList.toggle('is-hiddenn');
-    }
-
-    function logBackdropClick() {
-      console.log('Це клік в бекдроп');
-    }
-  })();
-</script> -->
