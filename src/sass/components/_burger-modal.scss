@@ -76,10 +76,14 @@
 
 .burger-modal__link {
   color: $title-color;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 114.286%;
   letter-spacing: -0.28px;
+
+  @media screen and (min-width: 375px) {
+    font-size: 14px;
+  }
 }
 
 .burger-active__page {

@@ -69,9 +69,10 @@
 .buy-now-close__svg {
   width: 15px;
   height: 15px;
+
   @media screen and (min-width: 768px) {
-    width: 25px;
-    width: 25px;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -450,6 +451,7 @@
   transition-duration: 300ms;
   transition-delay: 50ms;
   transition-timing-function: ease;
+  padding-right: 50px;
 
   &:hover {
     box-shadow: 0px 0px 15px 0px rgba(255, 145, 28, 1);
@@ -477,6 +479,7 @@
     padding: 22px 24px;
     width: 513px;
     border-radius: 13px;
+    padding-right: 75px;
   }
 }
 
@@ -488,14 +491,14 @@
   position: absolute;
   width: 32px;
   height: 21px;
-  top: 83px;
+  bottom: 0;
   right: 14px;
 
   @media screen and (min-width: 768px) {
     width: 44px;
     height: 30px;
     right: 24px;
-    top: 98px;
+    bottom: -4px;
   }
 }
 
