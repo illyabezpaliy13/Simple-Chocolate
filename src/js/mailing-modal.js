@@ -1,3 +1,5 @@
+import { config } from "dotenv";
+config();
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-open-mailing]'),
@@ -92,8 +94,8 @@ document
     event.preventDefault();
 
     if (validation(this) === true) {
-      const TOKEN = '';
-      const CHAT_ID = '-1001917308774';
+      const TOKEN = process.env.TOKEN;
+      const CHAT_ID = process.env.CHAT_ID;
       const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
       const success = document.getElementById('success');
 

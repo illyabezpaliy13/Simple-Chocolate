@@ -1,3 +1,6 @@
+import { config } from "dotenv";
+config();
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-open-review]'),
@@ -86,7 +89,6 @@ const refsThanks = {
 //! bc5 - thanks
 //! bc3 - review-modal
 
-
 function toggleModalThanks() {
   refsThanks.backdrop5.classList.toggle('is-hidden-thanks');
 }
@@ -97,8 +99,8 @@ document
     event.preventDefault();
 
     if (validation(this) === true) {
-      const TOKEN = '';
-      const CHAT_ID = '-1001917308774';
+      const TOKEN = process.env.TOKEN;
+      const CHAT_ID = process.env.CHAT_ID;
       const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
       const success = document.getElementById('success');
 
@@ -151,23 +153,19 @@ document
     }
   });
 
+// (() => {
+// const refs = {
+//   openModalBtn: document.querySelector('[data-open-thanks]'),
+//   closeModalBtn: document.querySelector('[data-close-thanks]'),
+//   backdrop5: document.querySelector('[data-backdrop-thanks]'),
+// };
 
+// refs.openModalBtn.addEventListener('click', toggleModal);
+// refs.closeModalBtn.addEventListener('click', toggleModal);
 
+// refs.backdrop5.addEventListener('click', logBackdropClick);
 
-
-  // (() => {
-    // const refs = {
-    //   openModalBtn: document.querySelector('[data-open-thanks]'),
-    //   closeModalBtn: document.querySelector('[data-close-thanks]'),
-    //   backdrop5: document.querySelector('[data-backdrop-thanks]'),
-    // };
-
-    // refs.openModalBtn.addEventListener('click', toggleModal);
-    // refs.closeModalBtn.addEventListener('click', toggleModal);
-
-    // refs.backdrop5.addEventListener('click', logBackdropClick);
-
-    // function toggleModal() {
-    //   refs.backdrop5.classList.toggle('is-hidden-thanks');
-    // }
-  // })();
+// function toggleModal() {
+//   refs.backdrop5.classList.toggle('is-hidden-thanks');
+// }
+// })();
